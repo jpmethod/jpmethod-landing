@@ -1,25 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>jpmethod.org</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPMethod Educational Workbooks</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+        }
+        
+        .domain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .domain-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .domain-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+        
+        /* Removed domain-id styling - not showing internal IDs */
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        
+        .section-description {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        
+        .special-section {
+            background: #f0f8ff;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border: 2px solid #3498db;
+        }
+        
+        .special-section h2 {
+            color: #2980b9;
+            border-bottom-color: #3498db;
+        }
+        
+        .domain-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .domain-description {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        
+        .sample-preview {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+            overflow-x: auto;
+            padding: 5px 0;
+        }
+        
+        .sample-preview img {
+            height: 120px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .sample-preview img:hover {
+            transform: scale(1.05);
+        }
+        
+        .download-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        
+        .download-btn:hover {
+            background: #2980b9;
+        }
+        
+        .file-size {
+            font-size: 0.85em;
+            color: #999;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 60px;
+            background: white;
+        }
+        
+        .no-samples {
+            color: #999;
+            font-style: italic;
+            padding: 20px;
+            text-align: center;
+            background: #f5f5f5;
+            border-radius: 6px;
+        }
+        
+        /* Modal for image preview */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            cursor: pointer;
+        }
+        
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            color: #bbb;
+        }
+        
+        @media (max-width: 768px) {
+            .domain-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
-<body style="font-family:sans-serif; max-width:600px; margin:auto; padding:2em;">
-  <h1>jpmethod.org</h1>
-
-  <h2>Resources</h2>
-  <ul>    
-    <li><a href="https://drive.google.com/file/d/12PNzRCtnqzBiGcSCzYjVEvpFNnHqflQt/view?usp=sharing" target="_blank">Negative Numbers</a></li>    
-    <li><a href="https://drive.google.com/file/d/1_ncc0RbwGqUUDNS8lx41nVt8joFxWiPT/view?usp=sharing" target="_blank">Large Multiplication</a></li>
-    <li><a href="https://drive.google.com/file/d/1_kF8OfdHYoiTBov3dJHZvS7BgbHDxV0J/view?usp=sharing" target="_blank">Music Reading</a></li>
-    <li><a href="https://drive.google.com/file/d/1jtsAMww7kz9rZhlvuBczPWZSyCuWGmc-/view?usp=sharing" target="_blank">Languages (Sample)</a></li>
-    <li><a href="https://drive.google.com/file/d/1ZZSSDiNg2YSznSUOzLLQf0JHeE25VYZy/view?usp=sharing" target="_blank">Golf (Sample)</a></li>
-    <li><a href="https://github.com/jpmethod/jpmethod-landing/blob/f056cc143ea6e6a50c254b490e3e219973712417/assets/JPMethod%20Non-Verbal%20Reasoning.pdf" target="_blank">Non-verbal Reasoning (Sample)</li>
-  </ul>
-
-  <h2>Videos</h2>
-  <ul>
-    <li><a href="https://www.youtube.com/channel/UCHfBUzvCxaQJ6v-fOJ4CP8Q" target="_blank">YouTube Reviews of our Content </a></li>
-  </ul>
+<body>
+    <header>
+        <div class="container">
+            <h1>JPMethod Educational Workbooks</h1>
+            <p class="subtitle">Free printable educational materials for mathematics, languages, music, and more</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div id="mainContent">
+            <!-- Sections will be dynamically generated -->
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JPMethod. All materials are free for educational use.</p>
+            <p><small>Last updated: <span id="lastUpdated"></span></small></p>
+        </div>
+    </footer>
+    
+    <!-- Modal for image preview -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    
+    <script>
+        // Helper function to create domain card
+        function createDomainCard(domain) {
+            const card = document.createElement('div');
+            card.className = 'domain-card';
+            
+            const samplesHtml = domain.samples && domain.samples.length > 0
+                ? `<div class="sample-preview">
+                    ${domain.samples.map(s => 
+                        `<img src="${s}" alt="${domain.name} sample" onclick="showModal('${s}')">`
+                    ).join('')}
+                   </div>`
+                : '<div class="no-samples">Preview images coming soon</div>';
+            
+            card.innerHTML = `
+                <h3>${domain.name}</h3>
+                <p class="domain-description">${domain.description}</p>
+                ${samplesHtml}
+                <div class="download-section">
+                    <a href="${domain.pdf_path}" class="download-btn" download>
+                        Download PDF
+                    </a>
+                    <span class="file-size">${domain.pdf_size_mb} MB</span>
+                </div>
+            `;
+            
+            return card;
+        }
+        
+        // Load and display catalog
+        fetch('assets/catalog.json')
+            .then(response => response.json())
+            .then(data => {
+                const mainContent = document.getElementById('mainContent');
+                document.getElementById('lastUpdated').textContent = 
+                    new Date(data.generated).toLocaleDateString();
+                
+                // Check if we have sectioned data
+                if (data.sections || data.special_sections) {
+                    // Display regular sections
+                    if (data.sections) {
+                        data.sections.forEach(section => {
+                            const sectionDiv = document.createElement('div');
+                            sectionDiv.className = 'section';
+                            
+                            sectionDiv.innerHTML = `
+                                <h2>${section.name}</h2>
+                                <p class="section-description">${section.description}</p>
+                            `;
+                            
+                            const grid = document.createElement('div');
+                            grid.className = 'domain-grid';
+                            
+                            section.domains.forEach(domain => {
+                                grid.appendChild(createDomainCard(domain));
+                            });
+                            
+                            sectionDiv.appendChild(grid);
+                            mainContent.appendChild(sectionDiv);
+                        });
+                    }
+                    
+                    // Display special sections
+                    if (data.special_sections) {
+                        data.special_sections.forEach(section => {
+                            const sectionDiv = document.createElement('div');
+                            sectionDiv.className = section.styling === 'highlighted' 
+                                ? 'special-section' : 'section';
+                            
+                            sectionDiv.innerHTML = `
+                                <h2>${section.name}</h2>
+                                <p class="section-description">${section.description}</p>
+                            `;
+                            
+                            const grid = document.createElement('div');
+                            grid.className = 'domain-grid';
+                            
+                            section.domains.forEach(domain => {
+                                grid.appendChild(createDomainCard(domain));
+                            });
+                            
+                            sectionDiv.appendChild(grid);
+                            mainContent.appendChild(sectionDiv);
+                        });
+                    }
+                } else {
+                    // Fallback to flat structure
+                    const grid = document.createElement('div');
+                    grid.className = 'domain-grid';
+                    mainContent.appendChild(grid);
+                    
+                    data.domains.forEach(domain => {
+                        grid.appendChild(createDomainCard(domain));
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error loading catalog:', error);
+                document.getElementById('mainContent').innerHTML = 
+                    '<p style="text-align: center; color: #666;">Error loading catalog. Please refresh the page.</p>';
+            });
+        
+        // Modal functionality
+        function showModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImg.src = imageSrc;
+        }
+        
+        // Close modal
+        const modal = document.getElementById('imageModal');
+        const closeBtn = document.getElementsByClassName('close')[0];
+        
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+        
+        modal.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
