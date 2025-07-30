@@ -1,5 +1,5 @@
 {
-  "generated": "2025-07-29T06:33:45.929295",
+  "generated": "2025-07-30T09:08:46.531153",
   "sections": [
     {
       "name": "Mathematics",
@@ -11,7 +11,8 @@
           "pdf_path": "downloads/signed-arithmetic/JPMethod_Signed_Arithmetic.pdf",
           "pdf_size_mb": 1.1,
           "samples": [
-            "assets/samples/signed-arithmetic/sample_1.png"
+            "assets/samples/signed-arithmetic/sample_1.png",
+            "assets/samples/signed-arithmetic/sample_2.png"
           ]
         },
         {
@@ -20,7 +21,8 @@
           "pdf_path": "downloads/multiplication-and-division/JPMethod_Multiplication_&_Division.pdf",
           "pdf_size_mb": 2.2,
           "samples": [
-            "assets/samples/multiplication-and-division/sample_1.png"
+            "assets/samples/multiplication-and-division/sample_1.png",
+            "assets/samples/multiplication-and-division/sample_2.png"
           ]
         },
         {
@@ -55,7 +57,8 @@
           "pdf_path": "downloads/key-signatures/JPMethod_Key_Signatures.pdf",
           "pdf_size_mb": 0.7,
           "samples": [
-            "assets/samples/key-signatures/sample_1.png"
+            "assets/samples/key-signatures/sample_1.png",
+            "assets/samples/key-signatures/sample_2.png"
           ]
         }
       ]
@@ -70,7 +73,8 @@
           "pdf_path": "downloads/english-sentence-construction/JPMethod_English_Sentence_Construction.pdf",
           "pdf_size_mb": 2.3,
           "samples": [
-            "assets/samples/english-sentence-construction/sample_1.png"
+            "assets/samples/english-sentence-construction/sample_1.png",
+            "assets/samples/english-sentence-construction/sample_2.png"
           ]
         }
       ]
@@ -85,7 +89,8 @@
           "pdf_path": "downloads/czech-language/JPMethod_Czech_Language.pdf",
           "pdf_size_mb": 0.9,
           "samples": [
-            "assets/samples/czech-language/sample_1.png"
+            "assets/samples/czech-language/sample_1.png",
+            "assets/samples/czech-language/sample_2.png"
           ]
         },
         {
@@ -94,7 +99,8 @@
           "pdf_path": "downloads/spanish-language/JPMethod_Spanish_Language.pdf",
           "pdf_size_mb": 0.8,
           "samples": [
-            "assets/samples/spanish-language/sample_1.png"
+            "assets/samples/spanish-language/sample_1.png",
+            "assets/samples/spanish-language/sample_2.png"
           ]
         }
       ]
@@ -119,7 +125,8 @@
           "pdf_path": "downloads/golf-strategy/JPMethod_Golf_Strategy.pdf",
           "pdf_size_mb": 4.9,
           "samples": [
-            "assets/samples/golf-strategy/sample_1.png"
+            "assets/samples/golf-strategy/sample_1.png",
+            "assets/samples/golf-strategy/sample_2.png"
           ]
         }
       ]
@@ -137,7 +144,8 @@
           "pdf_path": "downloads/english-for-czech-speakers-a/JPMethod_English_for_Czech_Speakers_A.pdf",
           "pdf_size_mb": 0.1,
           "samples": [
-            "assets/samples/english-for-czech-speakers-a/sample_1.png"
+            "assets/samples/english-for-czech-speakers-a/sample_1.png",
+            "assets/samples/english-for-czech-speakers-a/sample_2.png"
           ]
         },
         {
@@ -146,7 +154,8 @@
           "pdf_path": "downloads/english-for-czech-speakers-b/JPMethod_English_for_Czech_Speakers_B.pdf",
           "pdf_size_mb": 1.0,
           "samples": [
-            "assets/samples/english-for-czech-speakers-b/sample_1.png"
+            "assets/samples/english-for-czech-speakers-b/sample_1.png",
+            "assets/samples/english-for-czech-speakers-b/sample_2.png"
           ]
         },
         {
@@ -155,7 +164,8 @@
           "pdf_path": "downloads/military-english-for-czech-speakers/JPMethod_Military_English_for_Czech_Speakers.pdf",
           "pdf_size_mb": 0.1,
           "samples": [
-            "assets/samples/military-english-for-czech-speakers/sample_1.png"
+            "assets/samples/language-military-english-czech/sample_1.png",
+            "assets/samples/language-military-english-czech/sample_2.png"
           ]
         }
       ]
