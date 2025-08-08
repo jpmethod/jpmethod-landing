@@ -25,60 +25,11 @@
         }
         
         header {
+            text-align: center;
             padding: 40px 20px;
             background: white;
             border-bottom: 1px solid #e0e0e0;
             margin-bottom: 40px;
-        }
-        
-        .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .header-text {
-            flex: 1;
-            text-align: left;
-            padding-right: 30px;
-        }
-        
-        .learning-tree-thumb {
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        
-        .learning-tree-thumb:hover {
-            transform: scale(1.02);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-        }
-        
-        .learning-tree-thumb img {
-            display: block;
-            width: 300px;
-            height: auto;
-        }
-        
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .header-text {
-                padding-right: 0;
-                margin-bottom: 20px;
-                text-align: center;
-            }
-            
-            .learning-tree-thumb img {
-                width: 250px;
-            }
         }
         
         h1 {
@@ -260,42 +211,6 @@
             color: #bbb;
         }
         
-        .under-construction {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #ff9800;
-            color: white;
-            padding: 4px 12px;
-            border-radius: 4px;
-            font-size: 0.75em;
-            font-weight: bold;
-            text-transform: uppercase;
-            z-index: 10;
-        }
-        
-        .domain-card {
-            position: relative;
-            min-height: 320px;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .domain-description {
-            min-height: 3em;
-            flex-grow: 0;
-        }
-        
-        .special-section .domain-grid {
-            grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
-            justify-content: center;
-        }
-        
-        .special-section .domain-card {
-            min-height: 320px;
-            max-width: 350px;
-        }
-        
         @media (max-width: 768px) {
             .domain-grid {
                 grid-template-columns: 1fr;
@@ -309,14 +224,9 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <div class="header-text">
-                <h1>JPMethod Educational Workbooks</h1>
-                <p class="subtitle">Free printable educational materials for mathematics, languages, music, and more</p>
-            </div>
-            <div class="learning-tree-thumb" onclick="openModal('assets/jpmethod_learning_tree.png')">
-                <img src="assets/learning_tree_thumb_dark.png" alt="JPMethod Learning Tree - Click to enlarge" title="View Complete Learning Tree">
-            </div>
+        <div class="container">
+            <h1>JPMethod Educational Workbooks</h1>
+            <p class="subtitle">Free printable educational materials for mathematics, languages, music, and more</p>
         </div>
     </header>
     
@@ -340,42 +250,20 @@
     </div>
     
     <script>
-        // Modal functionality for learning tree
-        function openModal(imageSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImage = document.getElementById('modalImage');
-            modal.style.display = 'block';
-            modalImage.src = imageSrc;
-        }
-        
         // Helper function to create domain card
         function createDomainCard(domain) {
             const card = document.createElement('div');
             card.className = 'domain-card';
             
-            // Check if domain is under construction
-            const underConstructionDomains = [
-                'Non-Verbal Reasoning',
-                'Key Signatures', 
-                'English Sentence Construction',
-                'Golf Strategy'
-            ];
-            
-            const isUnderConstruction = underConstructionDomains.includes(domain.name);
-            const constructionBadge = isUnderConstruction 
-                ? '<span class="under-construction">Under Construction</span>' 
-                : '';
-            
             const samplesHtml = domain.samples && domain.samples.length > 0
                 ? `<div class="sample-preview">
                     ${domain.samples.map(s => 
-                        `<img src="${s}?v=${Date.now()}" alt="${domain.name} sample" onclick="showModal('${s}')" class="sample-image">`
+                        `<img src="${s}" alt="${domain.name} sample" onclick="showModal('${s}')">`
                     ).join('')}
                    </div>`
                 : '<div class="no-samples">Preview images coming soon</div>';
             
             card.innerHTML = `
-                ${constructionBadge}
                 <h3>${domain.name}</h3>
                 <p class="domain-description">${domain.description}</p>
                 ${samplesHtml}
@@ -391,7 +279,7 @@
         }
         
         // Load and display catalog
-        fetch('assets/catalog.json?v=' + Date.now())
+        fetch('assets/catalog.json')
             .then(response => response.json())
             .then(data => {
                 const mainContent = document.getElementById('mainContent');
