@@ -260,6 +260,42 @@
             color: #bbb;
         }
         
+        .under-construction {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ff9800;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            font-weight: bold;
+            text-transform: uppercase;
+            z-index: 10;
+        }
+        
+        .domain-card {
+            position: relative;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .domain-description {
+            min-height: 3em;
+            flex-grow: 0;
+        }
+        
+        .special-section .domain-grid {
+            grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
+            justify-content: center;
+        }
+        
+        .special-section .domain-card {
+            min-height: 320px;
+            max-width: 350px;
+        }
+        
         @media (max-width: 768px) {
             .domain-grid {
                 grid-template-columns: 1fr;
@@ -317,6 +353,19 @@
             const card = document.createElement('div');
             card.className = 'domain-card';
             
+            // Check if domain is under construction
+            const underConstructionDomains = [
+                'Non-Verbal Reasoning',
+                'Key Signatures', 
+                'English Sentence Construction',
+                'Golf Strategy'
+            ];
+            
+            const isUnderConstruction = underConstructionDomains.includes(domain.name);
+            const constructionBadge = isUnderConstruction 
+                ? '<span class="under-construction">Under Construction</span>' 
+                : '';
+            
             const samplesHtml = domain.samples && domain.samples.length > 0
                 ? `<div class="sample-preview">
                     ${domain.samples.map(s => 
@@ -326,6 +375,7 @@
                 : '<div class="no-samples">Preview images coming soon</div>';
             
             card.innerHTML = `
+                ${constructionBadge}
                 <h3>${domain.name}</h3>
                 <p class="domain-description">${domain.description}</p>
                 ${samplesHtml}
