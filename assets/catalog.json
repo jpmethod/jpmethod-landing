@@ -1,5 +1,5 @@
 {
-  "generated": "2025-10-13T16:14:16.278047",
+  "generated": "2025-10-13T16:17:01.208412",
   "sections": [
     {
       "name": "Mathematics",
@@ -23,6 +23,13 @@
           "samples": [
             "assets/samples/non-verbal-reasoning/sample_1.png"
           ]
+        },
+        {
+          "name": "Polynomials & Quadratic Equations",
+          "description": "Master polynomial manipulation and quadratic equation solving",
+          "pdf_path": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations.pdf",
+          "pdf_size_mb": 0.2,
+          "samples": []
         }
       ]
     },
