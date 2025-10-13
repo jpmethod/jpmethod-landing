@@ -53,11 +53,15 @@
         .domain-card {
             background: white;
             border-radius: 12px;
-            padding: 25px;
+            padding: 20px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
         }
-        
+
         .domain-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 16px rgba(0,0,0,0.12);
@@ -97,27 +101,28 @@
         }
         
         .domain-card h3 {
-            font-size: 1.4em;
-            margin-bottom: 10px;
+            font-size: 1.3em;
+            margin-bottom: 8px;
             color: #2c3e50;
         }
-        
+
         .domain-description {
             color: #666;
-            margin-bottom: 15px;
-            font-size: 0.95em;
+            margin-bottom: 10px;
+            font-size: 0.9em;
         }
-        
+
         .sample-preview {
             display: flex;
-            gap: 10px;
-            margin: 15px 0;
+            gap: 8px;
+            margin-top: auto;
+            margin-bottom: 10px;
             overflow-x: auto;
-            padding: 5px 0;
+            padding: 3px 0;
         }
-        
+
         .sample-preview img {
-            height: 120px;
+            height: 100px;
             border: 1px solid #e0e0e0;
             border-radius: 6px;
             cursor: pointer;
@@ -132,7 +137,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 15px;
+            padding-top: 10px;
         }
         
         .download-btn {
@@ -167,10 +172,13 @@
         .no-samples {
             color: #999;
             font-style: italic;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
             background: #f5f5f5;
             border-radius: 6px;
+            font-size: 0.9em;
+            margin-top: auto;
+            margin-bottom: 10px;
         }
         
         /* Modal for image preview */
