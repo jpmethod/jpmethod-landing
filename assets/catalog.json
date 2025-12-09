@@ -1,5 +1,5 @@
 {
-  "generated": "2025-10-13T16:17:01.208412",
+  "generated": "2025-12-09T21:16:11.547837",
   "sections": [
     {
       "name": "Mathematics",
@@ -28,10 +28,17 @@
           "name": "Polynomials & Quadratic Equations",
           "description": "Master polynomial manipulation and quadratic equation solving",
           "pdf_path": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations.pdf",
-          "pdf_size_mb": 6.3,
+          "pdf_size_mb": 0.2,
+          "samples": []
+        },
+        {
+          "name": "Decimal Operations",
+          "description": "Practice decimal arithmetic and conversions",
+          "pdf_path": "downloads/decimal-operations/JPMethod_Decimal_Operations.pdf",
+          "pdf_size_mb": 0.9,
           "samples": [
-            "assets/samples/polynomials-and-quadratic-equations/sample_1.png",
-            "assets/samples/polynomials-and-quadratic-equations/sample_2.png"
+            "assets/samples/decimal-operations/sample_1.png",
+            "assets/samples/decimal-operations/sample_2.png"
           ]
         }
       ]
@@ -90,6 +97,32 @@
           "samples": [
             "assets/samples/czech-language/sample_1.png",
             "assets/samples/czech-language/sample_2.png"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Geography",
+      "description": "Learn countries, capitals, and flags from around the world",
+      "domains": [
+        {
+          "name": "European Geography",
+          "description": "Learn European countries, capitals, and flags",
+          "pdf_path": "downloads/european-geography/JPMethod_European_Geography.pdf",
+          "pdf_size_mb": 1.1,
+          "samples": [
+            "assets/samples/european-geography/sample_1.png",
+            "assets/samples/european-geography/sample_2.png"
+          ]
+        },
+        {
+          "name": "World Geography",
+          "description": "Learn world countries, capitals, and flags (non-European)",
+          "pdf_path": "downloads/world-geography/JPMethod_World_Geography.pdf",
+          "pdf_size_mb": 52.5,
+          "samples": [
+            "assets/samples/world-geography/sample_1.png",
+            "assets/samples/world-geography/sample_2.png"
           ]
         }
       ]
