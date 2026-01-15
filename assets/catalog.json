@@ -1,25 +1,15 @@
 {
-  "generated": "2026-01-06T08:54:51.525614",
+  "generated": "2026-01-15T15:45:13.257850",
   "sections": [
     {
       "name": "Mathematics",
       "description": "Build strong mathematical foundations",
       "domains": [
         {
-          "name": "Signed Arithmetic",
-          "description": "Practice with negative numbers and signed operations",
-          "pdf_path": "downloads/signed-arithmetic/JPMethod_Signed_Arithmetic.pdf",
-          "pdf_size_mb": 1.0,
-          "samples": [
-            "assets/samples/signed-arithmetic/sample_1.png",
-            "assets/samples/signed-arithmetic/sample_2.png"
-          ]
-        },
-        {
           "name": "Multiplication & Division",
           "description": "Large number multiplication and division practice",
           "pdf_path": "downloads/multiplication-and-division/JPMethod_Multiplication_&_Division.pdf",
-          "pdf_size_mb": 2.1,
+          "pdf_size_mb": 2.2,
           "samples": [
             "assets/samples/multiplication-and-division/sample_1.png",
             "assets/samples/multiplication-and-division/sample_2.png"
@@ -61,7 +51,7 @@
           "name": "Music Notation",
           "description": "Learn to read musical notes and symbols",
           "pdf_path": "downloads/music-notation/JPMethod_Music_Notation.pdf",
-          "pdf_size_mb": 3.8,
+          "pdf_size_mb": 3.9,
           "samples": [
             "assets/samples/music-notation/sample_1.png",
             "assets/samples/music-notation/sample_2.png"
@@ -87,7 +77,7 @@
           "name": "English Sentence Construction",
           "description": "Build proper English sentences and grammar",
           "pdf_path": "downloads/english-sentence-construction/JPMethod_English_Sentence_Construction.pdf",
-          "pdf_size_mb": 2.1,
+          "pdf_size_mb": 2.5,
           "samples": [
             "assets/samples/english-sentence-construction/sample_1.png",
             "assets/samples/english-sentence-construction/sample_2.png"
@@ -119,7 +109,7 @@
           "name": "European Geography",
           "description": "Learn European countries, capitals, and flags",
           "pdf_path": "downloads/european-geography/JPMethod_European_Geography.pdf",
-          "pdf_size_mb": 1.1,
+          "pdf_size_mb": 1.2,
           "samples": [
             "assets/samples/european-geography/sample_1.png",
             "assets/samples/european-geography/sample_2.png"
@@ -145,7 +135,7 @@
           "name": "Golf Strategy",
           "description": "Golf shot selection and course management",
           "pdf_path": "downloads/golf-strategy/JPMethod_Golf_Strategy.pdf",
-          "pdf_size_mb": 7.0,
+          "pdf_size_mb": 7.1,
           "samples": [
             "assets/samples/golf-strategy/sample_1.png",
             "assets/samples/golf-strategy/sample_2.png"
