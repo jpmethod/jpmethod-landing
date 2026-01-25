@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-25T14:11:00.107471",
+  "generated": "2026-01-25T14:30:42.714110",
   "sections": [
     {
       "name": "Mathematics",
@@ -33,19 +33,21 @@
           "name": "Non-Verbal Reasoning",
           "description": "Visual pattern recognition and logical thinking",
           "pdf_path": "downloads/non-verbal-reasoning/JPMethod_Non-Verbal_Reasoning.pdf",
-          "pdf_size_mb": 0.3,
+          "pdf_size_mb": 0.4,
           "samples": [
             "assets/samples/non-verbal-reasoning/sample_1.png"
-          ]
+          ],
+          "pdf_path_a4": "downloads/non-verbal-reasoning/JPMethod_Non-Verbal_Reasoning_A4.pdf",
+          "pdf_size_a4_mb": 0.4
         },
         {
           "name": "Polynomials & Quadratic Equations",
           "description": "Master polynomial manipulation and quadratic equation solving",
           "pdf_path": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations.pdf",
-          "pdf_size_mb": 0.2,
+          "pdf_size_mb": 7.0,
           "samples": [],
           "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations_A4.pdf",
-          "pdf_size_a4_mb": 0.2
+          "pdf_size_a4_mb": 7.1
         },
         {
           "name": "Decimal Operations",
