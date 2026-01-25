@@ -130,28 +130,50 @@
         
         .download-section {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
+            gap: 8px;
             margin-top: 15px;
         }
-        
+
+        .download-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         .download-btn {
             display: inline-block;
             background: #3498db;
             color: white;
-            padding: 10px 20px;
+            padding: 8px 14px;
             text-decoration: none;
             border-radius: 6px;
             font-weight: 500;
+            font-size: 0.9em;
             transition: background 0.2s;
         }
-        
+
         .download-btn:hover {
             background: #2980b9;
         }
-        
+
+        .download-btn.secondary {
+            background: #27ae60;
+        }
+
+        .download-btn.secondary:hover {
+            background: #229954;
+        }
+
+        .download-label {
+            font-size: 0.75em;
+            color: #666;
+            display: block;
+            margin-top: 2px;
+        }
+
         .file-size {
-            font-size: 0.85em;
+            font-size: 0.8em;
             color: #999;
         }
         
@@ -254,27 +276,50 @@
         function createDomainCard(domain) {
             const card = document.createElement('div');
             card.className = 'domain-card';
-            
+
             const samplesHtml = domain.samples && domain.samples.length > 0
                 ? `<div class="sample-preview">
-                    ${domain.samples.map(s => 
+                    ${domain.samples.map(s =>
                         `<img src="${s}" alt="${domain.name} sample" onclick="showModal('${s}')">`
                     ).join('')}
                    </div>`
                 : '<div class="no-samples">Preview images coming soon</div>';
-            
+
+            // Build download buttons - A5 always present, A4 optional
+            let downloadHtml = `
+                <div class="download-section">
+                    <div class="download-row">
+                        <div>
+                            <a href="${domain.pdf_path}" class="download-btn" download>
+                                A5 Sequential
+                            </a>
+                            <span class="download-label">For reading or binding</span>
+                        </div>
+                        <span class="file-size">${domain.pdf_size_mb} MB</span>
+                    </div>`;
+
+            if (domain.pdf_path_a4) {
+                downloadHtml += `
+                    <div class="download-row">
+                        <div>
+                            <a href="${domain.pdf_path_a4}" class="download-btn secondary" download>
+                                A4 Booklet
+                            </a>
+                            <span class="download-label">Optimized for 2-sided print</span>
+                        </div>
+                        <span class="file-size">${domain.pdf_size_a4_mb} MB</span>
+                    </div>`;
+            }
+
+            downloadHtml += '</div>';
+
             card.innerHTML = `
                 <h3>${domain.name}</h3>
                 <p class="domain-description">${domain.description}</p>
                 ${samplesHtml}
-                <div class="download-section">
-                    <a href="${domain.pdf_path}" class="download-btn" download>
-                        Download PDF
-                    </a>
-                    <span class="file-size">${domain.pdf_size_mb} MB</span>
-                </div>
+                ${downloadHtml}
             `;
-            
+
             return card;
         }
         
