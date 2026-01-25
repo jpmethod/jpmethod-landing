@@ -130,15 +130,13 @@
         
         .download-section {
             display: flex;
-            flex-direction: column;
-            gap: 8px;
+            gap: 10px;
             margin-top: 15px;
+            flex-wrap: wrap;
         }
 
-        .download-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .download-item {
+            text-align: center;
         }
 
         .download-btn {
@@ -149,7 +147,7 @@
             text-decoration: none;
             border-radius: 6px;
             font-weight: 500;
-            font-size: 0.9em;
+            font-size: 0.85em;
             transition: background 0.2s;
         }
 
@@ -166,15 +164,21 @@
         }
 
         .download-label {
-            font-size: 0.75em;
-            color: #666;
+            font-size: 0.7em;
+            color: #888;
             display: block;
-            margin-top: 2px;
+            margin-top: 3px;
         }
 
-        .file-size {
-            font-size: 0.8em;
-            color: #999;
+        .domain-badge {
+            display: inline-block;
+            background: #f39c12;
+            color: white;
+            font-size: 0.7em;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 8px;
+            vertical-align: middle;
         }
         
         footer {
@@ -285,36 +289,33 @@
                    </div>`
                 : '<div class="no-samples">Preview images coming soon</div>';
 
-            // Build download buttons - A5 always present, A4 optional
+            // Build download buttons - A5 always present, A4 optional (side by side)
             let downloadHtml = `
                 <div class="download-section">
-                    <div class="download-row">
-                        <div>
-                            <a href="${domain.pdf_path}" class="download-btn" download>
-                                A5 Sequential
-                            </a>
-                            <span class="download-label">For reading or binding</span>
-                        </div>
-                        <span class="file-size">${domain.pdf_size_mb} MB</span>
+                    <div class="download-item">
+                        <a href="${domain.pdf_path}" class="download-btn" download>
+                            A5 Sequential
+                        </a>
+                        <span class="download-label">${domain.pdf_size_mb} MB</span>
                     </div>`;
 
             if (domain.pdf_path_a4) {
                 downloadHtml += `
-                    <div class="download-row">
-                        <div>
-                            <a href="${domain.pdf_path_a4}" class="download-btn secondary" download>
-                                A4 Booklet
-                            </a>
-                            <span class="download-label">Optimized for 2-sided print</span>
-                        </div>
-                        <span class="file-size">${domain.pdf_size_a4_mb} MB</span>
+                    <div class="download-item">
+                        <a href="${domain.pdf_path_a4}" class="download-btn secondary" download>
+                            A4 Booklet
+                        </a>
+                        <span class="download-label">${domain.pdf_size_a4_mb} MB</span>
                     </div>`;
             }
 
             downloadHtml += '</div>';
 
+            // Add badge if present
+            const badgeHtml = domain.badge ? `<span class="domain-badge">${domain.badge}</span>` : '';
+
             card.innerHTML = `
-                <h3>${domain.name}</h3>
+                <h3>${domain.name}${badgeHtml}</h3>
                 <p class="domain-description">${domain.description}</p>
                 ${samplesHtml}
                 ${downloadHtml}
