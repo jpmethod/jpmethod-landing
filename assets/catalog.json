@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-08T11:27:02.028040",
+  "generated": "2026-07-08T13:37:19.356192",
   "sections": [
     {
       "name": "Mathematics",
@@ -45,7 +45,10 @@
           "description": "Master polynomial manipulation and quadratic equation solving",
           "pdf_path": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations.pdf",
           "pdf_size_mb": 7.0,
-          "samples": [],
+          "samples": [
+            "assets/samples/polynomials-and-quadratic-equations/sample_1.png",
+            "assets/samples/polynomials-and-quadratic-equations/sample_2.png"
+          ],
           "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations_A4.pdf",
           "pdf_size_a4_mb": 7.1
         },
@@ -66,7 +69,10 @@
           "description": "Long division practice using the American bracket method",
           "pdf_path": "downloads/long-division/JPMethod_Long_Division.pdf",
           "pdf_size_mb": 0.6,
-          "samples": [],
+          "samples": [
+            "assets/samples/long-division/sample_1.png",
+            "assets/samples/long-division/sample_2.png"
+          ],
           "pdf_path_a4": "downloads/long-division/JPMethod_Long_Division_A4.pdf",
           "pdf_size_a4_mb": 0.6
         }
@@ -141,7 +147,10 @@
           "description": "Learn world countries, capitals, and flags (non-European)",
           "pdf_path": "downloads/world-geography/JPMethod_World_Geography.pdf",
           "pdf_size_mb": 9.3,
-          "samples": [],
+          "samples": [
+            "assets/samples/world-geography/sample_1.png",
+            "assets/samples/world-geography/sample_2.png"
+          ],
           "pdf_path_a4": "downloads/world-geography/JPMethod_World_Geography_A4.pdf",
           "pdf_size_a4_mb": 9.4
         },
@@ -150,7 +159,10 @@
           "description": "Identify European countries from their outline on a blank map",
           "pdf_path": "downloads/europe-blank-maps/JPMethod_Europe_Blank_Maps.pdf",
           "pdf_size_mb": 22.1,
-          "samples": [],
+          "samples": [
+            "assets/samples/europe-blank-maps/sample_1.png",
+            "assets/samples/europe-blank-maps/sample_2.png"
+          ],
           "pdf_path_a4": "downloads/europe-blank-maps/JPMethod_Europe_Blank_Maps_A4.pdf",
           "pdf_size_a4_mb": 22.2
         },
@@ -159,7 +171,10 @@
           "description": "Identify countries from their outline on a blank map, worldwide",
           "pdf_path": "downloads/world-blank-maps/JPMethod_World_Blank_Maps.pdf",
           "pdf_size_mb": 23.4,
-          "samples": [],
+          "samples": [
+            "assets/samples/world-blank-maps/sample_1.png",
+            "assets/samples/world-blank-maps/sample_2.png"
+          ],
           "pdf_path_a4": "downloads/world-blank-maps/JPMethod_World_Blank_Maps_A4.pdf",
           "pdf_size_a4_mb": 23.4
         }
