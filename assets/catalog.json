@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-10T22:10:02.474613",
+  "generated": "2026-07-10T23:18:59.589754",
   "sections": [
     {
       "name": "Mathematics",
@@ -189,7 +189,7 @@
             "assets/samples/polynomials-and-quadratic-equations/sample_2.png"
           ],
           "pages": 200,
-          "sections": 8,
+          "sections": 7,
           "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations_A4.pdf",
           "pdf_size_a4_mb": 7.1,
           "chapters": [
@@ -241,13 +241,6 @@
               "pages": 28,
               "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_07_A4.pdf",
               "pdf_size_a4_mb": 1.01
-            },
-            {
-              "number": 8,
-              "name": "Chapter 8",
-              "pages": 4,
-              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_08_A4.pdf",
-              "pdf_size_a4_mb": 0.01
             }
           ]
         },
