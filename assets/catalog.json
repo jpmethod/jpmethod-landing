@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-10T15:52:25.381084",
+  "generated": "2026-07-10T16:15:22.801988",
   "sections": [
     {
       "name": "Mathematics",
@@ -15,7 +15,9 @@
             "assets/samples/signed-arithmetic/sample_2.png"
           ],
           "pages": 207,
-          "sections": 15
+          "sections": 15,
+          "pdf_path_a4": "downloads/signed-arithmetic/JPMethod_Signed_Arithmetic_A4.pdf",
+          "pdf_size_a4_mb": 1.2
         },
         {
           "name": "Multiplication & Division",
@@ -26,7 +28,9 @@
             "assets/samples/multiplication-and-division/sample_1.png",
             "assets/samples/multiplication-and-division/sample_2.png"
           ],
-          "pages": 464
+          "pages": 464,
+          "pdf_path_a4": "downloads/multiplication-and-division/JPMethod_Multiplication_&_Division_A4.pdf",
+          "pdf_size_a4_mb": 2.3
         },
         {
           "name": "Non-Verbal Reasoning",

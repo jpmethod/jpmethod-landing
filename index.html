@@ -1,423 +1,628 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JPMethod Educational Workbooks</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f8f9fa;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            background: white;
-            border-bottom: 1px solid #e0e0e0;
-            margin-bottom: 40px;
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-        
-        .subtitle {
-            font-size: 1.2em;
-            color: #666;
-        }
-        
-        .domain-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        .domain-card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        
-        .domain-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-        }
-        
-        /* Removed domain-id styling - not showing internal IDs */
-        
-        .section {
-            margin-bottom: 50px;
-        }
-        
-        .section h2 {
-            font-size: 1.8em;
-            color: #2c3e50;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 10px;
-        }
-        
-        .section-description {
-            color: #666;
-            font-size: 1.1em;
-            margin-bottom: 20px;
-        }
-        
-        .special-section {
-            background: #f0f8ff;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 40px 0;
-            border: 2px solid #3498db;
-        }
-        
-        .special-section h2 {
-            color: #2980b9;
-            border-bottom-color: #3498db;
-        }
-        
-        .domain-card h3 {
-            font-size: 1.4em;
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-        
-        .domain-description {
-            color: #666;
-            margin-bottom: 15px;
-            font-size: 0.95em;
-        }
-        
-        .sample-preview {
-            display: flex;
-            gap: 10px;
-            margin: 15px 0;
-            overflow-x: auto;
-            padding: 5px 0;
-        }
-        
-        .sample-preview img {
-            height: 120px;
-            border: 1px solid #e0e0e0;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        
-        .sample-preview img:hover {
-            transform: scale(1.05);
-        }
-        
-        .download-section {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-            flex-wrap: wrap;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JP Method — Free Printable Practice Workbooks</title>
+<meta name="description" content="Free printable practice workbooks for maths, music, English, geography and Spanish. Short daily exercise sheets with answer keys — download, print, practise.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jpmethod.org/">
+<meta property="og:title" content="JP Method — Free Printable Practice Workbooks">
+<meta property="og:description" content="Free practice workbooks for maths, music, English, geography and Spanish. Short daily sheets with answer keys — download, print, practise.">
+<meta property="og:image" content="https://jpmethod.org/assets/samples/european-geography/sample_1.png">
+<meta name="theme-color" content="#0b5cad">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b5cad'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='bold' fill='%23fff' text-anchor='middle'%3EJP%3C/text%3E%3C/svg%3E">
+<style>
+  @font-face {
+    font-family: 'Bricolage Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('assets/fonts/bricolage-grotesque-700-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
 
-        .download-item {
-            text-align: center;
-        }
+  :root {
+    --bg: #faf9f7;
+    --surface: #ffffff;
+    --ink: #1c2430;
+    --muted: #5a6572;
+    --faint: #98a1ab;
+    --line: #dde2e8;
+    --brand: #0b5cad;          /* education blue */
+    --brand-dark: #094a8c;
+    --brand-deep: #083f77;     /* header band bottom */
+    --on-brand: #ffffff;
+    --on-brand-soft: #bcd7f2;
+    --tint: #f1f6fb;           /* pale blue wash for hover/secondary */
+    --badge: #d0451b;
+    --shadow: 0 1px 3px rgba(16, 32, 52, 0.10);
+    --shadow-lift: 0 2px 6px rgba(16, 32, 52, 0.08), 0 14px 32px -14px rgba(16, 32, 52, 0.22);
+    --sheet-shadow: 0 1px 2px rgba(16, 32, 52, 0.14), 0 10px 22px -10px rgba(16, 32, 52, 0.30);
+    --navbg: rgba(255, 255, 255, 0.85);
 
-        .download-btn {
-            display: inline-block;
-            background: #3498db;
-            color: white;
-            padding: 8px 14px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            font-size: 0.85em;
-            transition: background 0.2s;
-        }
+    --f: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --fd: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --maxw: 1220px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171c;
+      --surface: #1c2027;
+      --ink: #e8ebee;
+      --muted: #9aa4ae;
+      --faint: #6b7681;
+      --line: #2c323b;
+      --brand: #2f7fd4;
+      --brand-dark: #094a8c;
+      --brand-deep: #0a3a66;
+      --on-brand: #ffffff;
+      --on-brand-soft: #a9cdf0;
+      --tint: #1f2937;
+      --badge: #e06a44;
+      --shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+      --shadow-lift: 0 2px 6px rgba(0, 0, 0, 0.45), 0 16px 34px -14px rgba(0, 0, 0, 0.7);
+      --sheet-shadow: 0 1px 2px rgba(0, 0, 0, 0.55), 0 10px 22px -10px rgba(0, 0, 0, 0.8);
+      --navbg: rgba(20, 23, 28, 0.82);
+    }
+  }
+  :root[data-theme="light"] {
+    --bg:#faf9f7; --surface:#ffffff; --ink:#1c2430; --muted:#5a6572; --faint:#98a1ab;
+    --line:#dde2e8; --brand:#0b5cad; --brand-dark:#094a8c; --brand-deep:#083f77;
+    --on-brand:#ffffff; --on-brand-soft:#bcd7f2; --tint:#f1f6fb; --badge:#d0451b;
+    --shadow:0 1px 3px rgba(16,32,52,0.10);
+    --shadow-lift:0 2px 6px rgba(16,32,52,0.08), 0 14px 32px -14px rgba(16,32,52,0.22);
+    --sheet-shadow:0 1px 2px rgba(16,32,52,0.14), 0 10px 22px -10px rgba(16,32,52,0.30);
+    --navbg:rgba(255,255,255,0.85);
+  }
+  :root[data-theme="dark"] {
+    --bg:#14171c; --surface:#1c2027; --ink:#e8ebee; --muted:#9aa4ae; --faint:#6b7681;
+    --line:#2c323b; --brand:#2f7fd4; --brand-dark:#094a8c; --brand-deep:#0a3a66;
+    --on-brand:#ffffff; --on-brand-soft:#a9cdf0; --tint:#1f2937; --badge:#e06a44;
+    --shadow:0 1px 3px rgba(0,0,0,0.5);
+    --shadow-lift:0 2px 6px rgba(0,0,0,0.45), 0 16px 34px -14px rgba(0,0,0,0.7);
+    --sheet-shadow:0 1px 2px rgba(0,0,0,0.55), 0 10px 22px -10px rgba(0,0,0,0.8);
+    --navbg:rgba(20,23,28,0.82);
+  }
 
-        .download-btn:hover {
-            background: #2980b9;
-        }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+  }
+  body { font-family: var(--f); color: var(--ink); background: var(--bg); line-height: 1.5; }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+  a { color: var(--brand); }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
 
-        .download-btn.secondary {
-            background: #27ae60;
-        }
+  /* ---------- header band ---------- */
+  .band {
+    background: linear-gradient(175deg, var(--brand) 0%, var(--brand-deep) 100%);
+    color: var(--on-brand);
+    padding: 30px 0 36px;
+  }
+  .band .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .wordmark { font-family: var(--fd); font-size: 1.3rem; font-weight: 700; letter-spacing: -0.01em; }
+  .wordmark span { opacity: 0.85; }
+  .theme-btn {
+    font: inherit; font-size: 0.75rem; font-weight: 600;
+    color: var(--on-brand); background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.35); border-radius: 5px;
+    padding: 5px 12px; cursor: pointer;
+  }
+  .theme-btn:hover { background: rgba(255,255,255,0.24); }
 
-        .download-btn.secondary:hover {
-            background: #229954;
-        }
+  .herogrid { display: grid; grid-template-columns: 1fr auto; gap: 20px 48px; align-items: center; }
+  .band h1 {
+    font-family: var(--fd);
+    font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+    font-weight: 700; letter-spacing: -0.01em; line-height: 1.14;
+    margin-top: 24px; max-width: 22ch; text-wrap: balance;
+  }
+  .band .sub {
+    color: var(--on-brand-soft); font-size: 0.95rem; max-width: 58ch; margin-top: 10px;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .chip {
+    font-size: 0.78rem; font-weight: 600; color: var(--on-brand);
+    background: rgba(255,255,255,0.13); border: 1px solid rgba(255,255,255,0.28);
+    border-radius: 999px; padding: 4px 13px; white-space: nowrap;
+  }
+  .band .stats { margin-top: 14px; font-size: 0.8rem; color: var(--on-brand-soft); }
+  .band .stats b { color: var(--on-brand); font-weight: 700; }
+  .band .stats .sep { margin: 0 8px; opacity: 0.5; }
 
-        .download-label {
-            font-size: 0.7em;
-            color: #888;
-            display: block;
-            margin-top: 3px;
-        }
+  /* fan of real sample pages — the hero visual */
+  .herofan { position: relative; width: 330px; height: 252px; margin-top: 12px; }
+  .herofan img {
+    position: absolute; width: 152px; border-radius: 3px; background: #fff;
+    box-shadow: 0 2px 4px rgba(5, 18, 34, 0.35), 0 18px 36px -12px rgba(5, 18, 34, 0.55);
+  }
+  .herofan img:nth-child(1) { left: 0;     top: 22px; transform: rotate(-7deg); }
+  .herofan img:nth-child(2) { left: 88px;  top: 2px;  transform: rotate(-1deg); z-index: 1; }
+  .herofan img:nth-child(3) { left: 176px; top: 18px; transform: rotate(6deg); }
+  @media (max-width: 920px) { .herofan { display: none; } }
 
-        .domain-badge {
-            display: inline-block;
-            background: #f39c12;
-            color: white;
-            font-size: 0.7em;
-            padding: 2px 8px;
-            border-radius: 10px;
-            margin-left: 8px;
-            vertical-align: middle;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: #666;
-            border-top: 1px solid #e0e0e0;
-            margin-top: 60px;
-            background: white;
-        }
-        
-        .no-samples {
-            color: #999;
-            font-style: italic;
-            padding: 20px;
-            text-align: center;
-            background: #f5f5f5;
-            border-radius: 6px;
-        }
-        
-        /* Modal for image preview */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.8);
-            cursor: pointer;
-        }
-        
-        .modal-content {
-            margin: auto;
-            display: block;
-            max-width: 90%;
-            max-height: 90%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .close {
-            position: absolute;
-            top: 20px;
-            right: 40px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        
-        .close:hover {
-            color: #bbb;
-        }
-        
-        @media (max-width: 768px) {
-            .domain-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            h1 {
-                font-size: 2em;
-            }
-        }
-    </style>
+  /* ---------- subject nav ---------- */
+  .subjectnav {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--navbg);
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .subjectnav .wrap {
+    display: flex; gap: 0 26px;
+    overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .subjectnav .wrap::-webkit-scrollbar { display: none; }
+  .subjectnav a {
+    text-decoration: none; color: var(--muted);
+    font-size: 0.85rem; font-weight: 600; white-space: nowrap;
+    padding: 11px 0 9px; border-bottom: 2px solid transparent; margin-bottom: -1px;
+    transition: color .15s, border-color .15s;
+  }
+  .subjectnav a:hover { color: var(--brand); border-bottom-color: var(--line); }
+  .subjectnav a.active { color: var(--brand); border-bottom-color: var(--brand); }
+  .subjectnav .n { color: var(--faint); font-weight: 500; margin-left: 3px; font-size: 0.78rem; }
+
+  /* ---------- how it works + printing help ---------- */
+  .how {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px 22px;
+    margin-top: 26px;
+  }
+  .step { display: flex; gap: 12px; align-items: flex-start; }
+  .step .ico {
+    flex: none; width: 36px; height: 36px; border-radius: 50%;
+    background: var(--tint); color: var(--brand);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step .ico svg { width: 19px; height: 19px; }
+  .step b { display: block; font-size: 0.88rem; margin-top: 1px; }
+  .step span { color: var(--muted); font-size: 0.8rem; line-height: 1.45; }
+  @media (max-width: 760px) { .how { grid-template-columns: 1fr; gap: 12px; } }
+
+  .printhelp {
+    margin-top: 18px; border: 1px solid var(--line); border-radius: 10px;
+    background: var(--surface);
+  }
+  .printhelp summary {
+    cursor: pointer; padding: 10px 16px;
+    font-size: 0.85rem; font-weight: 600; color: var(--brand);
+    list-style-position: inside;
+  }
+  .printhelp p { padding: 0 16px 10px; font-size: 0.82rem; color: var(--muted); max-width: 80ch; }
+  .printhelp p b { color: var(--ink); }
+
+  /* ---------- sections ---------- */
+  .section { margin-top: 36px; }
+  .sechead { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .sechead h2 { font-family: var(--fd); font-size: 1.28rem; font-weight: 700; letter-spacing: -0.01em; }
+  .sechead h2::after {
+    content: ""; display: block; width: 44px; height: 3px;
+    background: var(--brand); border-radius: 2px; margin-top: 6px;
+  }
+  .sechead .count { color: var(--faint); font-size: 0.85rem; font-weight: 600; }
+  .sechead .featured {
+    font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--badge); border: 1px solid currentColor; border-radius: 4px; padding: 1px 7px;
+  }
+  .sechead .secdesc { color: var(--muted); font-size: 0.85rem; margin-left: auto; }
+
+  /* ---------- workbook grid ---------- */
+  .shelf {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(196px, 1fr));
+    gap: 22px 20px;
+    margin-top: 18px;
+  }
+  .book {
+    background: var(--surface);
+    border: 1px solid var(--line); border-radius: 12px;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    transition: border-color .2s, box-shadow .2s, transform .2s;
+  }
+  .book:hover { border-color: var(--faint); box-shadow: var(--shadow-lift); transform: translateY(-3px); }
+
+  /* scroll reveal (JS adds .in; no-JS and reduced-motion stay visible) */
+  .reveal .book { opacity: 0; transform: translateY(8px); }
+  .reveal .book.in { opacity: 1; transform: none; transition: opacity .45s ease, transform .45s ease, border-color .2s, box-shadow .2s; }
+  .reveal .book.in:hover { transform: translateY(-3px); }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal .book { opacity: 1; transform: none; }
+  }
+
+  /* portrait paper preview — the whole first page, like a workbook on a shelf */
+  .plate {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    background: var(--tint); border-bottom: 1px solid var(--line);
+  }
+  .tile {
+    position: absolute; inset: 0;
+    border: 0; padding: 16px; cursor: zoom-in;
+    background: transparent;
+    display: flex; align-items: center; justify-content: center;
+    width: 100%; height: 100%;
+  }
+  .tile img {
+    max-width: 100%; max-height: 100%; display: block;
+    background: #fff; border-radius: 2px;
+    box-shadow: var(--sheet-shadow);
+    transition: transform .35s ease;
+  }
+  .tile:hover img, .tile:focus-visible img { transform: scale(1.025); }
+  .tile .placeholder { color: var(--faint); font-size: 0.78rem; font-weight: 600; }
+  .pages {
+    position: absolute; bottom: 10px; right: 10px; pointer-events: none;
+    font-size: 0.68rem; font-weight: 600; color: #fff;
+    background: rgba(28, 36, 48, 0.72); border-radius: 999px; padding: 3px 10px;
+  }
+
+  .book .body { padding: 12px 14px 14px; display: flex; flex-direction: column; flex: 1; }
+  .book h3 { font-size: 0.98rem; font-weight: 700; line-height: 1.3; letter-spacing: -0.01em; }
+  .badge {
+    font-size: 0.62rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--badge); border: 1px solid currentColor; border-radius: 4px;
+    padding: 0 5px; margin-left: 6px; vertical-align: 2px; white-space: nowrap;
+  }
+  .book .desc {
+    color: var(--muted); font-size: 0.8rem; line-height: 1.45; margin-top: 4px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .get { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; }
+  .btn {
+    display: inline-block; text-decoration: none; border-radius: 6px;
+    font-size: 0.78rem; font-weight: 700;
+    padding: 7px 12px; line-height: 1.2;
+    transition: background .15s, border-color .15s;
+  }
+  .btn small { font-weight: 500; opacity: 0.65; font-size: 0.68rem; margin-left: 2px; }
+  .btn.a5 { background: var(--brand); color: var(--on-brand); }
+  .btn.a5:hover { background: var(--brand-dark); }
+  .btn.a4 { color: var(--brand); border: 1px solid var(--line); background: transparent; }
+  .btn.a4:hover { border-color: var(--brand); background: var(--tint); }
+
+  /* ---------- footer ---------- */
+  footer {
+    margin-top: 56px; border-top: 1px solid var(--line);
+    padding: 22px 0 34px; color: var(--muted); font-size: 0.82rem;
+  }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+  footer .stamp { color: var(--faint); font-size: 0.75rem; }
+
+  .loading, .load-error { text-align: center; color: var(--muted); padding: 60px 0; font-size: 0.9rem; }
+
+  /* ---------- modal ---------- */
+  .modal { display: none; position: fixed; inset: 0; z-index: 100; background: rgba(10, 16, 24, 0.85); }
+  .modal.open { display: block; }
+  .modal img {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    max-width: min(92vw, 900px); max-height: 88vh;
+    background: #fff; box-shadow: 0 30px 80px rgba(0,0,0,0.5); border-radius: 4px;
+  }
+  .modal .mclose, .modal .mprev, .modal .mnext {
+    position: absolute; z-index: 2; font-size: 1.05rem; line-height: 1;
+    color: #eef2f6; background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.3); border-radius: 6px;
+    padding: 10px 14px; cursor: pointer;
+  }
+  .modal .mclose { top: 18px; right: 18px; }
+  .modal .mprev { left: 14px; top: 50%; transform: translateY(-50%); }
+  .modal .mnext { right: 14px; top: 50%; transform: translateY(-50%); }
+  .modal .mcount {
+    position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+    font-size: 0.78rem; color: #c9d3dc;
+  }
+  .modal button:hover { background: rgba(255,255,255,0.22); }
+
+  @media (max-width: 640px) {
+    .shelf { grid-template-columns: repeat(2, 1fr); gap: 14px 12px; }
+    .book .body { padding: 10px 11px 12px; }
+    .tile { padding: 10px; }
+    .sechead .secdesc { margin-left: 0; width: 100%; }
+  }
+</style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>JPMethod Educational Workbooks</h1>
-            <p class="subtitle">Free printable educational materials for mathematics, languages, music, and more</p>
-        </div>
-    </header>
-    
-    <div class="container">
-        <div id="mainContent">
-            <!-- Sections will be dynamically generated -->
-        </div>
+
+<header class="band">
+  <div class="wrap">
+    <div class="top">
+      <div class="wordmark">JP <span>Method</span></div>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour theme">Dark mode</button>
     </div>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 JPMethod. All materials are free for educational use.</p>
-            <p><small>Last updated: <span id="lastUpdated"></span></small></p>
+    <div class="herogrid">
+      <div>
+        <h1>Free printable practice workbooks</h1>
+        <p class="sub">Maths, music, English, geography and Spanish — built on short daily exercises your child can do in ten minutes, with the answers at the back.</p>
+        <div class="chips">
+          <span class="chip">Free — no sign-up</span>
+          <span class="chip">Answer keys included</span>
+          <span class="chip">Print at home or use a tablet</span>
         </div>
-    </footer>
-    
-    <!-- Modal for image preview -->
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
+        <p class="stats" id="statsline">free for home &amp; classroom</p>
+      </div>
+      <div class="herofan" aria-hidden="true">
+        <img src="assets/samples/music-notation/sample_1.png" alt="" loading="eager">
+        <img src="assets/samples/european-geography/sample_1.png" alt="" loading="eager">
+        <img src="assets/samples/europe-blank-maps/sample_1.png" alt="" loading="eager">
+      </div>
     </div>
-    
-    <script>
-        // Helper function to create domain card
-        function createDomainCard(domain) {
-            const card = document.createElement('div');
-            card.className = 'domain-card';
+  </div>
+</header>
 
-            const samplesHtml = domain.samples && domain.samples.length > 0
-                ? `<div class="sample-preview">
-                    ${domain.samples.map(s =>
-                        `<img src="${s}" alt="${domain.name} sample" onclick="showModal('${s}')">`
-                    ).join('')}
-                   </div>`
-                : '<div class="no-samples">Preview images coming soon</div>';
+<nav class="subjectnav" aria-label="Subjects"><div class="wrap" id="subjectNav"></div></nav>
 
-            // Build download buttons - A5 always present, A4 optional (side by side)
-            let downloadHtml = `
-                <div class="download-section">
-                    <div class="download-item">
-                        <a href="${domain.pdf_path}" class="download-btn" download>
-                            A5 Sequential
-                        </a>
-                        <span class="download-label">${domain.pdf_size_mb} MB</span>
-                    </div>`;
+<div class="wrap">
+  <section class="how" aria-label="How it works">
+    <div class="step">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m8 11 4 4 4-4"/><path d="M4 21h16"/></svg></div>
+      <div><b>Pick a workbook</b><span>Browse by subject and download the PDF — every workbook is free.</span></div>
+    </div>
+    <div class="step">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 8V4h10v4"/><path d="M5 8h14a2 2 0 0 1 2 2v6h-4v4H7v-4H3v-6a2 2 0 0 1 2-2Z"/><path d="M7 16h10"/></svg></div>
+      <div><b>Print it — or don't</b><span>Print the pages at home, or open them on a tablet and work alongside.</span></div>
+    </div>
+    <div class="step">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+      <div><b>Ten minutes a day</b><span>Short sheets build skills in small steps — check answers together at the back.</span></div>
+    </div>
+  </section>
+  <details class="printhelp">
+    <summary>Which download should I choose?</summary>
+    <p><b>Download PDF</b> — one worksheet per page. The simplest option: view it on a tablet, or print it on any printer.</p>
+    <p><b>A4 booklet</b> — two worksheet pages on each A4 sheet. Print double-sided (choose “flip on short edge”), then fold or cut the stack into a ready-made booklet.</p>
+  </details>
+</div>
 
-            if (domain.pdf_path_a4) {
-                downloadHtml += `
-                    <div class="download-item">
-                        <a href="${domain.pdf_path_a4}" class="download-btn secondary" download>
-                            A4 Booklet
-                        </a>
-                        <span class="download-label">${domain.pdf_size_a4_mb} MB</span>
-                    </div>`;
+<main class="wrap" id="mainContent">
+  <p class="loading">Loading the catalogue…</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> JP Method &middot; Free to print and share for home and classroom use.</span>
+    <span class="stamp">Catalogue updated <span id="lastUpdated"></span></span>
+  </div>
+</footer>
+
+<div class="modal" id="imageModal" role="dialog" aria-modal="true" aria-label="Worksheet preview">
+  <button class="mclose" id="mClose" type="button" aria-label="Close preview">&times;</button>
+  <button class="mprev" id="mPrev" type="button" aria-label="Previous page">&lsaquo;</button>
+  <img id="modalImage" alt="Worksheet sample page">
+  <button class="mnext" id="mNext" type="button" aria-label="Next page">&rsaquo;</button>
+  <div class="mcount" id="mCount"></div>
+</div>
+
+<script>
+  /* ---------- theme ---------- */
+  (function () {
+    var btn = document.getElementById('themeBtn');
+    function paintBtn() {
+      var dark = document.documentElement.dataset.theme === 'dark';
+      btn.textContent = dark ? 'Light mode' : 'Dark mode';
+    }
+    var saved = null;
+    try { saved = localStorage.getItem('jpm-theme'); } catch (e) {}
+    /* light is the default — the workbooks are white paper; saved preference wins */
+    document.documentElement.dataset.theme =
+      (saved === 'light' || saved === 'dark') ? saved : 'light';
+    paintBtn();
+    btn.addEventListener('click', function () {
+      var next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('jpm-theme', next); } catch (e) {}
+      paintBtn();
+    });
+  })();
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
+
+  var galleries = [];
+
+  function bookCard(domain) {
+    var el = document.createElement('article');
+    el.className = 'book';
+
+    var hasSamples = domain.samples && domain.samples.length > 0;
+    var galleryIdx = -1;
+    if (hasSamples) { galleryIdx = galleries.length; galleries.push({ imgs: domain.samples, name: domain.name }); }
+
+    /* whole first page shown as a sheet of paper; clicking opens the full gallery */
+    var plate;
+    if (hasSamples) {
+      var n = domain.samples.length;
+      /* the pill states the real size of the workbook, not the preview */
+      var facts = [];
+      if (domain.sections) facts.push(domain.sections + ' section' + (domain.sections === 1 ? '' : 's'));
+      if (domain.pages) facts.push(domain.pages + ' pages');
+      plate =
+        '<button class="tile" type="button" aria-label="Preview ' + n + ' sample page' + (n === 1 ? '' : 's') + ' of ' + domain.name + '">' +
+          '<img src="' + domain.samples[0] + '" loading="lazy" alt="Sample page of ' + domain.name + '">' +
+        '</button>' +
+        '<span class="pages">' + (facts.length ? facts.join(' · ') : 'Preview') + '</span>';
+    } else {
+      plate = '<div class="tile"><div class="placeholder">Preview coming soon</div></div>';
+    }
+
+    var badge = domain.badge ? '<span class="badge">' + domain.badge + '</span>' : '';
+
+    var get = '<div class="get">' +
+      '<a class="btn a5" href="' + domain.pdf_path + '" download>Download PDF <small>' + domain.pdf_size_mb + ' MB</small></a>';
+    if (domain.pdf_path_a4) {
+      get += '<a class="btn a4" href="' + domain.pdf_path_a4 + '" download>A4 booklet <small>' + domain.pdf_size_a4_mb + ' MB</small></a>';
+    }
+    get += '</div>';
+
+    el.innerHTML =
+      '<div class="plate">' + plate + '</div>' +
+      '<div class="body">' +
+        '<h3>' + domain.name + badge + '</h3>' +
+        '<p class="desc">' + domain.description + '</p>' + get +
+      '</div>';
+
+    if (hasSamples) {
+      el.querySelector('.tile').addEventListener('click', function () { openModal(galleryIdx, 0); });
+    }
+    return el;
+  }
+
+  function renderSection(section, isFeatured) {
+    var div = document.createElement('section');
+    div.className = 'section';
+    div.id = slug(section.name);
+    div.innerHTML =
+      '<div class="sechead">' +
+        '<h2>' + section.name + '</h2>' +
+        '<span class="count">' + section.domains.length + ' workbook' + (section.domains.length === 1 ? '' : 's') + '</span>' +
+        (isFeatured ? '<span class="featured">featured</span>' : '') +
+        '<span class="secdesc">' + section.description + '</span>' +
+      '</div>';
+    var shelf = document.createElement('div');
+    shelf.className = 'shelf';
+    section.domains.forEach(function (d) { shelf.appendChild(bookCard(d)); });
+    div.appendChild(shelf);
+    return div;
+  }
+
+  fetch('assets/catalog.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      var main = document.getElementById('mainContent');
+      main.innerHTML = '';
+      document.getElementById('lastUpdated').textContent =
+        new Date(data.generated).toLocaleDateString();
+
+      var sections = data.sections || [];
+      var special = data.special_sections || [];
+
+      /* Mathematics leads; everything else keeps its catalogue order */
+      var LEAD = 'Mathematics';
+      sections = sections.filter(function (s) { return s.name === LEAD; })
+        .concat(sections.filter(function (s) { return s.name !== LEAD; }));
+      var nav = document.getElementById('subjectNav');
+      var total = 0;
+
+      sections.forEach(function (s) { main.appendChild(renderSection(s, false)); });
+      special.forEach(function (s) { main.appendChild(renderSection(s, s.styling === 'highlighted')); });
+      if (!sections.length && !special.length && data.domains) {
+        main.appendChild(renderSection({ name: 'Workbooks', description: '', domains: data.domains }, false));
+      }
+
+      Array.prototype.forEach.call(document.querySelectorAll('.section'), function (sec) {
+        var name = sec.querySelector('h2').textContent;
+        var n = sec.querySelectorAll('.book').length;
+        total += n;
+        var a = document.createElement('a');
+        a.href = '#' + sec.id;
+        a.innerHTML = name + '<span class="n">' + n + '</span>';
+        nav.appendChild(a);
+      });
+
+      var stats = document.getElementById('statsline');
+      stats.innerHTML = '<b>' + total + '</b> workbooks<span class="sep">·</span>' + stats.innerHTML;
+
+      /* scroll reveal — staggered per shelf, skipped for reduced motion */
+      var motionOK = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (motionOK && 'IntersectionObserver' in window) {
+        document.body.classList.add('reveal');
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (!en.isIntersecting) return;
+            var shelf = en.target.parentElement;
+            var idx = Array.prototype.indexOf.call(shelf.children, en.target);
+            en.target.style.transitionDelay = Math.min(idx * 45, 270) + 'ms';
+            en.target.classList.add('in');
+            io.unobserve(en.target);
+          });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+        Array.prototype.forEach.call(document.querySelectorAll('.book'), function (b) { io.observe(b); });
+      }
+
+      /* scrollspy — highlight the subject you're in */
+      var navLinks = {};
+      Array.prototype.forEach.call(document.querySelectorAll('.subjectnav a'), function (a) {
+        navLinks[a.getAttribute('href').slice(1)] = a;
+      });
+      if ('IntersectionObserver' in window) {
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (!en.isIntersecting) return;
+            Object.keys(navLinks).forEach(function (k) { navLinks[k].classList.remove('active'); });
+            var link = navLinks[en.target.id];
+            if (link) {
+              link.classList.add('active');
+              link.scrollIntoView({ block: 'nearest', inline: 'nearest' });
             }
+          });
+        }, { rootMargin: '-15% 0px -70% 0px' });
+        Array.prototype.forEach.call(document.querySelectorAll('.section'), function (s) { spy.observe(s); });
+      }
+    })
+    .catch(function (err) {
+      console.error('Error loading catalog:', err);
+      document.getElementById('mainContent').innerHTML =
+        '<p class="load-error">The catalogue failed to load. Please refresh the page.</p>';
+    });
 
-            downloadHtml += '</div>';
+  /* ---------- modal ---------- */
+  var modal = document.getElementById('imageModal'),
+      mImg = document.getElementById('modalImage'),
+      mCount = document.getElementById('mCount'),
+      mPrev = document.getElementById('mPrev'),
+      mNext = document.getElementById('mNext'),
+      mClose = document.getElementById('mClose'),
+      cur = { g: 0, i: 0 },
+      lastFocus = null;
 
-            // Add badge if present
-            const badgeHtml = domain.badge ? `<span class="domain-badge">${domain.badge}</span>` : '';
+  function openModal(g, i) {
+    cur = { g: g, i: i };
+    paintModal();
+    modal.classList.add('open');
+    lastFocus = document.activeElement;
+    mClose.focus();
+  }
+  function paintModal() {
+    var gal = galleries[cur.g];
+    mImg.src = gal.imgs[cur.i];
+    mImg.alt = 'Sample page ' + (cur.i + 1) + ' of ' + gal.name;
+    mCount.textContent = gal.name + ' — page ' + (cur.i + 1) + ' of ' + gal.imgs.length;
+    var many = gal.imgs.length > 1;
+    mPrev.style.display = many ? '' : 'none';
+    mNext.style.display = many ? '' : 'none';
+  }
+  function step(d) {
+    var gal = galleries[cur.g];
+    cur.i = (cur.i + d + gal.imgs.length) % gal.imgs.length;
+    paintModal();
+  }
+  function closeModal() {
+    modal.classList.remove('open');
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
 
-            card.innerHTML = `
-                <h3>${domain.name}${badgeHtml}</h3>
-                <p class="domain-description">${domain.description}</p>
-                ${samplesHtml}
-                ${downloadHtml}
-            `;
-
-            return card;
-        }
-        
-        // Load and display catalog
-        fetch('assets/catalog.json')
-            .then(response => response.json())
-            .then(data => {
-                const mainContent = document.getElementById('mainContent');
-                document.getElementById('lastUpdated').textContent = 
-                    new Date(data.generated).toLocaleDateString();
-                
-                // Check if we have sectioned data
-                if (data.sections || data.special_sections) {
-                    // Display regular sections
-                    if (data.sections) {
-                        data.sections.forEach(section => {
-                            const sectionDiv = document.createElement('div');
-                            sectionDiv.className = 'section';
-                            
-                            sectionDiv.innerHTML = `
-                                <h2>${section.name}</h2>
-                                <p class="section-description">${section.description}</p>
-                            `;
-                            
-                            const grid = document.createElement('div');
-                            grid.className = 'domain-grid';
-                            
-                            section.domains.forEach(domain => {
-                                grid.appendChild(createDomainCard(domain));
-                            });
-                            
-                            sectionDiv.appendChild(grid);
-                            mainContent.appendChild(sectionDiv);
-                        });
-                    }
-                    
-                    // Display special sections
-                    if (data.special_sections) {
-                        data.special_sections.forEach(section => {
-                            const sectionDiv = document.createElement('div');
-                            sectionDiv.className = section.styling === 'highlighted' 
-                                ? 'special-section' : 'section';
-                            
-                            sectionDiv.innerHTML = `
-                                <h2>${section.name}</h2>
-                                <p class="section-description">${section.description}</p>
-                            `;
-                            
-                            const grid = document.createElement('div');
-                            grid.className = 'domain-grid';
-                            
-                            section.domains.forEach(domain => {
-                                grid.appendChild(createDomainCard(domain));
-                            });
-                            
-                            sectionDiv.appendChild(grid);
-                            mainContent.appendChild(sectionDiv);
-                        });
-                    }
-                } else {
-                    // Fallback to flat structure
-                    const grid = document.createElement('div');
-                    grid.className = 'domain-grid';
-                    mainContent.appendChild(grid);
-                    
-                    data.domains.forEach(domain => {
-                        grid.appendChild(createDomainCard(domain));
-                    });
-                }
-            })
-            .catch(error => {
-                console.error('Error loading catalog:', error);
-                document.getElementById('mainContent').innerHTML = 
-                    '<p style="text-align: center; color: #666;">Error loading catalog. Please refresh the page.</p>';
-            });
-        
-        // Modal functionality
-        function showModal(imageSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            modal.style.display = 'block';
-            modalImg.src = imageSrc;
-        }
-        
-        // Close modal
-        const modal = document.getElementById('imageModal');
-        const closeBtn = document.getElementsByClassName('close')[0];
-        
-        closeBtn.onclick = function() {
-            modal.style.display = 'none';
-        }
-        
-        modal.onclick = function(event) {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        }
-    </script>
+  mPrev.addEventListener('click', function (e) { e.stopPropagation(); step(-1); });
+  mNext.addEventListener('click', function (e) { e.stopPropagation(); step(1); });
+  mClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function (e) {
+    if (!modal.classList.contains('open')) return;
+    if (e.key === 'Escape') closeModal();
+    if (e.key === 'ArrowLeft') step(-1);
+    if (e.key === 'ArrowRight') step(1);
+    if (e.key === 'Tab') {
+      /* keep focus inside the dialog */
+      var f = [mClose, mPrev, mNext].filter(function (b) { return b.style.display !== 'none'; });
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { last.focus(); e.preventDefault(); }
+      else if (!e.shiftKey && document.activeElement === last) { first.focus(); e.preventDefault(); }
+      else if (f.indexOf(document.activeElement) === -1) { first.focus(); e.preventDefault(); }
+    }
+  });
+</script>
 </body>
 </html>
