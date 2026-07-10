@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-10T16:15:22.801988",
+  "generated": "2026-07-10T22:10:02.474613",
   "sections": [
     {
       "name": "Mathematics",
@@ -8,6 +8,7 @@
         {
           "name": "Signed Arithmetic",
           "description": "Practice with negative numbers and signed operations",
+          "slug": "signed-arithmetic",
           "pdf_path": "downloads/signed-arithmetic/JPMethod_Signed_Arithmetic.pdf",
           "pdf_size_mb": 1.1,
           "samples": [
@@ -17,24 +18,147 @@
           "pages": 207,
           "sections": 15,
           "pdf_path_a4": "downloads/signed-arithmetic/JPMethod_Signed_Arithmetic_A4.pdf",
-          "pdf_size_a4_mb": 1.2
+          "pdf_size_a4_mb": 1.2,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "Subtraction: Positive or Slightly Negative Results",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 2,
+              "name": "Addition: Negative First Number, Any Result",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 3,
+              "name": "Simple Subtraction (Mixed Results)",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 4,
+              "name": "Subtraction up to 20 (Mixed Results)",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 5,
+              "name": "Mixed Positive Addition & Subtraction",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 6,
+              "name": "Negative Second Term (Addition)",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 7,
+              "name": "Negative First Term (Addition)",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 8,
+              "name": "Both Terms Negative (Addition)",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 9,
+              "name": "Addition with Brackets (Mixed Signs)",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_09_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 10,
+              "name": "Negative Results from Subtraction",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_10_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 11,
+              "name": "Controlled Mixed Signs",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_11_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 12,
+              "name": "Mixed with Zero",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_12_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 13,
+              "name": "Mixed Signs: Wider Range",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_13_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 14,
+              "name": "Near Boundaries: -40 to 40",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_14_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 15,
+              "name": "Final Revision: All Concepts",
+              "pages": 14,
+              "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_15_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            }
+          ]
         },
         {
-          "name": "Multiplication & Division",
-          "description": "Large number multiplication and division practice",
-          "pdf_path": "downloads/multiplication-and-division/JPMethod_Multiplication_&_Division.pdf",
-          "pdf_size_mb": 2.2,
+          "name": "Multiplication: Times Tables to 15x",
+          "description": "Extended times tables beyond 12x12, one table at a time up to 15x",
+          "slug": "multiplication-times-tables-to-15x",
+          "pdf_path": "downloads/multiplication-times-tables-to-15x/JPMethod_Multiplication_Times_Tables_to_15x.pdf",
+          "pdf_size_mb": 0.8,
           "samples": [
-            "assets/samples/multiplication-and-division/sample_1.png",
-            "assets/samples/multiplication-and-division/sample_2.png"
+            "assets/samples/multiplication-times-tables-to-15x/sample_1.png",
+            "assets/samples/multiplication-times-tables-to-15x/sample_2.png"
           ],
-          "pages": 464,
-          "pdf_path_a4": "downloads/multiplication-and-division/JPMethod_Multiplication_&_Division_A4.pdf",
-          "pdf_size_a4_mb": 2.3
+          "pages": 229,
+          "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/JPMethod_Multiplication_Times_Tables_to_15x_A4.pdf",
+          "pdf_size_a4_mb": 0.9
+        },
+        {
+          "name": "Large Multiplication & Division",
+          "description": "Large number multiplication and division practice up to 25x25",
+          "slug": "large-multiplication-and-division",
+          "pdf_path": "downloads/large-multiplication-and-division/JPMethod_Large_Multiplication_&_Division.pdf",
+          "pdf_size_mb": 0.8,
+          "samples": [
+            "assets/samples/large-multiplication-and-division/sample_1.png",
+            "assets/samples/large-multiplication-and-division/sample_2.png"
+          ],
+          "pages": 229,
+          "pdf_path_a4": "downloads/large-multiplication-and-division/JPMethod_Large_Multiplication_&_Division_A4.pdf",
+          "pdf_size_a4_mb": 0.9
         },
         {
           "name": "Non-Verbal Reasoning",
           "description": "Visual pattern recognition and logical thinking",
+          "slug": "non-verbal-reasoning",
           "pdf_path": "downloads/non-verbal-reasoning/JPMethod_Non-Verbal_Reasoning.pdf",
           "pdf_size_mb": 0.4,
           "samples": [
@@ -43,11 +167,21 @@
           "pages": 13,
           "sections": 1,
           "pdf_path_a4": "downloads/non-verbal-reasoning/JPMethod_Non-Verbal_Reasoning_A4.pdf",
-          "pdf_size_a4_mb": 0.4
+          "pdf_size_a4_mb": 0.4,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "Simple Sequences",
+              "pages": 9,
+              "pdf_path_a4": "downloads/non-verbal-reasoning/chapters/JPMethod_Non-Verbal_Reasoning_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.24
+            }
+          ]
         },
         {
           "name": "Polynomials & Quadratic Equations",
           "description": "Master polynomial manipulation and quadratic equation solving",
+          "slug": "polynomials-and-quadratic-equations",
           "pdf_path": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations.pdf",
           "pdf_size_mb": 7.0,
           "samples": [
@@ -57,11 +191,70 @@
           "pages": 200,
           "sections": 8,
           "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations_A4.pdf",
-          "pdf_size_a4_mb": 7.1
+          "pdf_size_a4_mb": 7.1,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "Multiplication of Polynomials",
+              "pages": 28,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.97
+            },
+            {
+              "number": 2,
+              "name": "Multiplication Using Formulas",
+              "pages": 28,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.98
+            },
+            {
+              "number": 3,
+              "name": "Factorisation",
+              "pages": 28,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 1.0
+            },
+            {
+              "number": 4,
+              "name": "Square Roots",
+              "pages": 28,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.96
+            },
+            {
+              "number": 5,
+              "name": "Quadratic Equations",
+              "pages": 28,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 1.01
+            },
+            {
+              "number": 6,
+              "name": "Graphs of Quadratic Functions",
+              "pages": 28,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 1.01
+            },
+            {
+              "number": 7,
+              "name": "The Pythagorean Theorem",
+              "pages": 28,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 1.01
+            },
+            {
+              "number": 8,
+              "name": "Chapter 8",
+              "pages": 4,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 0.01
+            }
+          ]
         },
         {
           "name": "Decimal Operations",
           "description": "Practice decimal arithmetic and conversions",
+          "slug": "decimal-operations",
           "pdf_path": "downloads/decimal-operations/JPMethod_Decimal_Operations.pdf",
           "pdf_size_mb": 0.9,
           "samples": [
@@ -75,6 +268,7 @@
         {
           "name": "Long Division",
           "description": "Long division practice using the American bracket method",
+          "slug": "long-division",
           "pdf_path": "downloads/long-division/JPMethod_Long_Division.pdf",
           "pdf_size_mb": 0.6,
           "samples": [
@@ -84,7 +278,37 @@
           "pages": 20,
           "sections": 4,
           "pdf_path_a4": "downloads/long-division/JPMethod_Long_Division_A4.pdf",
-          "pdf_size_a4_mb": 0.6
+          "pdf_size_a4_mb": 0.6,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "3-digit / 1-digit, exact",
+              "pages": 3,
+              "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.1
+            },
+            {
+              "number": 2,
+              "name": "3-digit / 1-digit \u2014 zero in quotient",
+              "pages": 5,
+              "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.1
+            },
+            {
+              "number": 3,
+              "name": "zeros anywhere \u2014 3/2 up to 4/3",
+              "pages": 3,
+              "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.1
+            },
+            {
+              "number": 4,
+              "name": "3-digit / 2-digit, with remainder",
+              "pages": 3,
+              "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.1
+            }
+          ]
         }
       ]
     },
@@ -95,6 +319,7 @@
         {
           "name": "Music Notation",
           "description": "Learn to read musical notes and symbols",
+          "slug": "music-notation",
           "pdf_path": "downloads/music-notation/JPMethod_Music_Notation.pdf",
           "pdf_size_mb": 3.9,
           "samples": [
@@ -108,6 +333,7 @@
         {
           "name": "Key Signatures",
           "description": "Master major and minor key signatures",
+          "slug": "key-signatures",
           "pdf_path": "downloads/key-signatures/JPMethod_Key_Signatures.pdf",
           "pdf_size_mb": 1.1,
           "samples": [
@@ -127,6 +353,7 @@
         {
           "name": "English Sentence Construction",
           "description": "Build proper English sentences and grammar",
+          "slug": "english-sentence-construction",
           "pdf_path": "downloads/english-sentence-construction/JPMethod_English_Sentence_Construction.pdf",
           "pdf_size_mb": 2.5,
           "samples": [
@@ -136,7 +363,156 @@
           "pages": 407,
           "sections": 21,
           "pdf_path_a4": "downloads/english-sentence-construction/JPMethod_English_Sentence_Construction_A4.pdf",
-          "pdf_size_a4_mb": 2.6
+          "pdf_size_a4_mb": 2.6,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "Basic Vocabulary & Definitions",
+              "pages": 18,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.12
+            },
+            {
+              "number": 2,
+              "name": "Simple Sentence Completion",
+              "pages": 18,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 3,
+              "name": "Preposition Practice",
+              "pages": 18,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 4,
+              "name": "Advanced Sentence Building",
+              "pages": 18,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.12
+            },
+            {
+              "number": 5,
+              "name": "Reading Comprehension - Short Passages",
+              "pages": 17,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 0.12
+            },
+            {
+              "number": 6,
+              "name": "Question & Answer Practice",
+              "pages": 17,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 0.12
+            },
+            {
+              "number": 7,
+              "name": "Which Clause Construction - Weather & Climate",
+              "pages": 17,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 0.12
+            },
+            {
+              "number": 8,
+              "name": "Intermediate Vocabulary & Word Relationships",
+              "pages": 35,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 9,
+              "name": "Complex Sentence Completion",
+              "pages": 18,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_09_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 10,
+              "name": "Advanced Connectors & Transitions",
+              "pages": 18,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_10_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 11,
+              "name": "Multi-Blank Sentence Construction",
+              "pages": 18,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_11_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 12,
+              "name": "Reading Comprehension - Extended Passages",
+              "pages": 17,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_12_A4.pdf",
+              "pdf_size_a4_mb": 0.12
+            },
+            {
+              "number": 13,
+              "name": "Analytical Question & Answer",
+              "pages": 17,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_13_A4.pdf",
+              "pdf_size_a4_mb": 0.12
+            },
+            {
+              "number": 14,
+              "name": "Which Clause Construction - Science & Nature",
+              "pages": 17,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_14_A4.pdf",
+              "pdf_size_a4_mb": 0.12
+            },
+            {
+              "number": 15,
+              "name": "Advanced Vocabulary & Abstract Concepts",
+              "pages": 35,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_15_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 16,
+              "name": "Sophisticated Sentence Completion",
+              "pages": 18,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_16_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 17,
+              "name": "Complex Grammatical Structures",
+              "pages": 18,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_17_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 18,
+              "name": "Advanced Multi-Clause Construction",
+              "pages": 18,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_18_A4.pdf",
+              "pdf_size_a4_mb": 0.11
+            },
+            {
+              "number": 19,
+              "name": "Reading Comprehension - Academic Texts",
+              "pages": 17,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_19_A4.pdf",
+              "pdf_size_a4_mb": 0.12
+            },
+            {
+              "number": 20,
+              "name": "Critical Analysis & Evaluation",
+              "pages": 17,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_20_A4.pdf",
+              "pdf_size_a4_mb": 0.12
+            },
+            {
+              "number": 21,
+              "name": "Which Clause Construction - Academic & Professional",
+              "pages": 17,
+              "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_21_A4.pdf",
+              "pdf_size_a4_mb": 0.12
+            }
+          ]
         }
       ]
     },
@@ -147,6 +523,7 @@
         {
           "name": "European Geography",
           "description": "Learn European countries, capitals, and flags",
+          "slug": "european-geography",
           "pdf_path": "downloads/european-geography/JPMethod_European_Geography.pdf",
           "pdf_size_mb": 1.2,
           "samples": [
@@ -156,11 +533,49 @@
           "pages": 241,
           "sections": 5,
           "pdf_path_a4": "downloads/european-geography/JPMethod_European_Geography_A4.pdf",
-          "pdf_size_a4_mb": 1.3
+          "pdf_size_a4_mb": 1.3,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "Most Well-Known European Flags",
+              "pages": 45,
+              "pdf_path_a4": "downloads/european-geography/chapters/JPMethod_European_Geography_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.18
+            },
+            {
+              "number": 2,
+              "name": "Nordic & Eastern European Flags",
+              "pages": 45,
+              "pdf_path_a4": "downloads/european-geography/chapters/JPMethod_European_Geography_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.18
+            },
+            {
+              "number": 3,
+              "name": "Balkan & Southern European Flags",
+              "pages": 45,
+              "pdf_path_a4": "downloads/european-geography/chapters/JPMethod_European_Geography_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.19
+            },
+            {
+              "number": 4,
+              "name": "Microstates & Small Nations",
+              "pages": 45,
+              "pdf_path_a4": "downloads/european-geography/chapters/JPMethod_European_Geography_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.21
+            },
+            {
+              "number": 5,
+              "name": "Eastern European Flags",
+              "pages": 45,
+              "pdf_path_a4": "downloads/european-geography/chapters/JPMethod_European_Geography_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 0.21
+            }
+          ]
         },
         {
           "name": "Europe Blank Maps",
           "description": "Identify European countries from their outline on a blank map",
+          "slug": "europe-blank-maps",
           "pdf_path": "downloads/europe-blank-maps/JPMethod_Europe_Blank_Maps.pdf",
           "pdf_size_mb": 22.1,
           "samples": [
@@ -170,11 +585,84 @@
           "pages": 214,
           "sections": 10,
           "pdf_path_a4": "downloads/europe-blank-maps/JPMethod_Europe_Blank_Maps_A4.pdf",
-          "pdf_size_a4_mb": 22.2
+          "pdf_size_a4_mb": 22.2,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "Western Europe",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.56
+            },
+            {
+              "number": 2,
+              "name": "Central Europe",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.32
+            },
+            {
+              "number": 3,
+              "name": "Northern Europe",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.93
+            },
+            {
+              "number": 4,
+              "name": "Southern Europe",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.67
+            },
+            {
+              "number": 5,
+              "name": "Eastern Europe",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 0.85
+            },
+            {
+              "number": 6,
+              "name": "West and Central Together",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 2.83
+            },
+            {
+              "number": 7,
+              "name": "North and East Together",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 2.78
+            },
+            {
+              "number": 8,
+              "name": "The South and the Balkans",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 1.48
+            },
+            {
+              "number": 9,
+              "name": "All Europe: Major Countries",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_09_A4.pdf",
+              "pdf_size_a4_mb": 3.92
+            },
+            {
+              "number": 10,
+              "name": "All Europe: The Full Map",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_10_A4.pdf",
+              "pdf_size_a4_mb": 7.71
+            }
+          ]
         },
         {
           "name": "World Geography",
           "description": "Learn world countries, capitals, and flags (non-European)",
+          "slug": "world-geography",
           "pdf_path": "downloads/world-geography/JPMethod_World_Geography.pdf",
           "pdf_size_mb": 9.3,
           "samples": [
@@ -184,11 +672,70 @@
           "pages": 394,
           "sections": 8,
           "pdf_path_a4": "downloads/world-geography/JPMethod_World_Geography_A4.pdf",
-          "pdf_size_a4_mb": 9.4
+          "pdf_size_a4_mb": 9.4,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "The Americas - North & Central",
+              "pages": 45,
+              "pdf_path_a4": "downloads/world-geography/chapters/JPMethod_World_Geography_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.46
+            },
+            {
+              "number": 2,
+              "name": "The Americas - South",
+              "pages": 45,
+              "pdf_path_a4": "downloads/world-geography/chapters/JPMethod_World_Geography_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.65
+            },
+            {
+              "number": 3,
+              "name": "East & Southeast Asia",
+              "pages": 45,
+              "pdf_path_a4": "downloads/world-geography/chapters/JPMethod_World_Geography_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.78
+            },
+            {
+              "number": 4,
+              "name": "South Asia & Indochina",
+              "pages": 45,
+              "pdf_path_a4": "downloads/world-geography/chapters/JPMethod_World_Geography_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 1.0
+            },
+            {
+              "number": 5,
+              "name": "Middle East",
+              "pages": 45,
+              "pdf_path_a4": "downloads/world-geography/chapters/JPMethod_World_Geography_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 1.01
+            },
+            {
+              "number": 6,
+              "name": "North & West Africa",
+              "pages": 45,
+              "pdf_path_a4": "downloads/world-geography/chapters/JPMethod_World_Geography_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 1.09
+            },
+            {
+              "number": 7,
+              "name": "East & Southern Africa",
+              "pages": 45,
+              "pdf_path_a4": "downloads/world-geography/chapters/JPMethod_World_Geography_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 1.25
+            },
+            {
+              "number": 8,
+              "name": "Oceania & Pacific",
+              "pages": 45,
+              "pdf_path_a4": "downloads/world-geography/chapters/JPMethod_World_Geography_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 1.35
+            }
+          ]
         },
         {
           "name": "World Blank Maps",
           "description": "Identify countries from their outline on a blank map, worldwide",
+          "slug": "world-blank-maps",
           "pdf_path": "downloads/world-blank-maps/JPMethod_World_Blank_Maps.pdf",
           "pdf_size_mb": 23.4,
           "samples": [
@@ -198,7 +745,79 @@
           "pages": 214,
           "sections": 10,
           "pdf_path_a4": "downloads/world-blank-maps/JPMethod_World_Blank_Maps_A4.pdf",
-          "pdf_size_a4_mb": 23.4
+          "pdf_size_a4_mb": 23.4,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "North America and the Caribbean",
+              "pages": 21,
+              "pdf_path_a4": "downloads/world-blank-maps/chapters/JPMethod_World_Blank_Maps_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 1.0
+            },
+            {
+              "number": 2,
+              "name": "Central America",
+              "pages": 21,
+              "pdf_path_a4": "downloads/world-blank-maps/chapters/JPMethod_World_Blank_Maps_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.36
+            },
+            {
+              "number": 3,
+              "name": "South America",
+              "pages": 21,
+              "pdf_path_a4": "downloads/world-blank-maps/chapters/JPMethod_World_Blank_Maps_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.67
+            },
+            {
+              "number": 4,
+              "name": "Northern Africa",
+              "pages": 21,
+              "pdf_path_a4": "downloads/world-blank-maps/chapters/JPMethod_World_Blank_Maps_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.75
+            },
+            {
+              "number": 5,
+              "name": "West and Central Africa",
+              "pages": 21,
+              "pdf_path_a4": "downloads/world-blank-maps/chapters/JPMethod_World_Blank_Maps_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 0.52
+            },
+            {
+              "number": 6,
+              "name": "East and Southern Africa",
+              "pages": 21,
+              "pdf_path_a4": "downloads/world-blank-maps/chapters/JPMethod_World_Blank_Maps_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 0.87
+            },
+            {
+              "number": 7,
+              "name": "The Middle East",
+              "pages": 21,
+              "pdf_path_a4": "downloads/world-blank-maps/chapters/JPMethod_World_Blank_Maps_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 2.51
+            },
+            {
+              "number": 8,
+              "name": "Central and South Asia",
+              "pages": 21,
+              "pdf_path_a4": "downloads/world-blank-maps/chapters/JPMethod_World_Blank_Maps_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 3.15
+            },
+            {
+              "number": 9,
+              "name": "East and Southeast Asia and Oceania",
+              "pages": 21,
+              "pdf_path_a4": "downloads/world-blank-maps/chapters/JPMethod_World_Blank_Maps_Chapter_09_A4.pdf",
+              "pdf_size_a4_mb": 6.04
+            },
+            {
+              "number": 10,
+              "name": "The Whole World",
+              "pages": 21,
+              "pdf_path_a4": "downloads/world-blank-maps/chapters/JPMethod_World_Blank_Maps_Chapter_10_A4.pdf",
+              "pdf_size_a4_mb": 7.44
+            }
+          ]
         }
       ]
     },
@@ -209,6 +828,7 @@
         {
           "name": "Spanish Language",
           "description": "Spanish vocabulary and basic phrases",
+          "slug": "spanish-language",
           "pdf_path": "downloads/spanish-language/JPMethod_Spanish_Language.pdf",
           "pdf_size_mb": 1.0,
           "samples": [
