@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-11T13:09:03.784057",
+  "generated": "2026-07-11T13:20:03.376667",
   "sections": [
     {
       "name": "Mathematics",
@@ -139,8 +139,6 @@
           ],
           "pages": 229,
           "sections": 10,
-          "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/JPMethod_Multiplication_Times_Tables_to_15x_A4.pdf",
-          "pdf_size_a4_mb": 0.9,
           "chapters": [
             {
               "number": 1,
@@ -482,43 +480,85 @@
           "description": "Long division practice using the American bracket method",
           "slug": "long-division",
           "pdf_path": "downloads/long-division/JPMethod_Long_Division.pdf",
-          "pdf_size_mb": 0.6,
+          "pdf_size_mb": 1.7,
           "samples": [
             "assets/samples/long-division/sample_1.png",
             "assets/samples/long-division/sample_2.png"
           ],
-          "pages": 20,
-          "sections": 4,
+          "pages": 456,
+          "sections": 10,
           "pdf_path_a4": "downloads/long-division/JPMethod_Long_Division_A4.pdf",
-          "pdf_size_a4_mb": 0.6,
+          "pdf_size_a4_mb": 1.9,
           "chapters": [
             {
               "number": 1,
               "name": "3-digit / 1-digit, exact",
-              "pages": 3,
+              "pages": 40,
               "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_01_A4.pdf",
-              "pdf_size_a4_mb": 0.1
+              "pdf_size_a4_mb": 0.15
             },
             {
               "number": 2,
               "name": "3-digit / 1-digit \u2014 zero in quotient",
-              "pages": 5,
+              "pages": 40,
               "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_02_A4.pdf",
-              "pdf_size_a4_mb": 0.1
+              "pdf_size_a4_mb": 0.16
             },
             {
               "number": 3,
               "name": "zeros anywhere \u2014 3/2 up to 4/3",
-              "pages": 3,
+              "pages": 40,
               "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_03_A4.pdf",
-              "pdf_size_a4_mb": 0.1
+              "pdf_size_a4_mb": 0.16
             },
             {
               "number": 4,
               "name": "3-digit / 2-digit, with remainder",
-              "pages": 3,
+              "pages": 40,
               "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_04_A4.pdf",
-              "pdf_size_a4_mb": 0.1
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 5,
+              "name": "4-digit / 1-digit",
+              "pages": 90,
+              "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 0.21
+            },
+            {
+              "number": 6,
+              "name": "4-digit / 2-digit, exact",
+              "pages": 40,
+              "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 0.16
+            },
+            {
+              "number": 7,
+              "name": "4-digit / 2-digit, with remainder",
+              "pages": 40,
+              "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 0.16
+            },
+            {
+              "number": 8,
+              "name": "4-digit / 3-digit, exact",
+              "pages": 40,
+              "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 9,
+              "name": "4-digit / 3-digit, with remainder",
+              "pages": 40,
+              "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_09_A4.pdf",
+              "pdf_size_a4_mb": 0.16
+            },
+            {
+              "number": 10,
+              "name": "Mixed review",
+              "pages": 40,
+              "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_10_A4.pdf",
+              "pdf_size_a4_mb": 0.16
             }
           ]
         }
