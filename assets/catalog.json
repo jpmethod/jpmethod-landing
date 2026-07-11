@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-11T12:20:03.102870",
+  "generated": "2026-07-11T13:09:03.784057",
   "sections": [
     {
       "name": "Mathematics",
@@ -533,239 +533,85 @@
           "description": "Learn to read musical notes and symbols",
           "slug": "music-notation",
           "pdf_path": "downloads/music-notation/JPMethod_Music_Notation.pdf",
-          "pdf_size_mb": 3.9,
+          "pdf_size_mb": 2.4,
           "samples": [
             "assets/samples/music-notation/sample_1.png",
             "assets/samples/music-notation/sample_2.png"
           ],
-          "pages": 286,
-          "sections": 32,
+          "pages": 224,
+          "sections": 10,
           "pdf_path_a4": "downloads/music-notation/JPMethod_Music_Notation_A4.pdf",
-          "pdf_size_a4_mb": 4.0,
+          "pdf_size_a4_mb": 2.5,
           "chapters": [
             {
               "number": 1,
-              "name": "Treble Clef - C4 to C5 (Quarter Notes)",
-              "pages": 9,
+              "name": "Treble Clef I - Middle C to C5",
+              "pages": 22,
               "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_01_A4.pdf",
-              "pdf_size_a4_mb": 0.15
+              "pdf_size_a4_mb": 0.41
             },
             {
               "number": 2,
-              "name": "Treble Clef - C4 to C5 (Quarter and Half Notes)",
-              "pages": 9,
+              "name": "Treble Clef II - Extending the Range",
+              "pages": 22,
               "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_02_A4.pdf",
-              "pdf_size_a4_mb": 0.19
-            },
-            {
-              "number": 3,
-              "name": "Treble Clef - C4 to C5 (Eighth, Quarter, Half, & Whole Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_03_A4.pdf",
-              "pdf_size_a4_mb": 0.28
-            },
-            {
-              "number": 4,
-              "name": "Treble Clef - C5 to A5 (Quarter Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_04_A4.pdf",
-              "pdf_size_a4_mb": 0.14
-            },
-            {
-              "number": 5,
-              "name": "Treble Clef - C4 to A5 (Quarter Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_05_A4.pdf",
-              "pdf_size_a4_mb": 0.18
-            },
-            {
-              "number": 6,
-              "name": "Treble Clef - G3 to C4 (Quarter Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_06_A4.pdf",
-              "pdf_size_a4_mb": 0.13
-            },
-            {
-              "number": 7,
-              "name": "Treble Clef - G3 to A5 (Eighth, Quarter, Half, & Whole Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_07_A4.pdf",
-              "pdf_size_a4_mb": 0.39
-            },
-            {
-              "number": 8,
-              "name": "Bass Clef - C3 to C4 (Quarter Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_08_A4.pdf",
-              "pdf_size_a4_mb": 0.14
-            },
-            {
-              "number": 9,
-              "name": "Bass Clef - C2 to C3 (Quarter Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_09_A4.pdf",
-              "pdf_size_a4_mb": 0.18
-            },
-            {
-              "number": 10,
-              "name": "Bass Clef - C2 to C3 (Quarter, Half, & Whole Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_10_A4.pdf",
-              "pdf_size_a4_mb": 0.24
-            },
-            {
-              "number": 11,
-              "name": "Bass Clef - C2 to C3 (Eighth, Quarter, Half, & Whole Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_11_A4.pdf",
               "pdf_size_a4_mb": 0.25
             },
             {
-              "number": 12,
-              "name": "Bass Clef - C3 to G3 (Quarter Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_12_A4.pdf",
-              "pdf_size_a4_mb": 0.13
-            },
-            {
-              "number": 13,
-              "name": "Bass Clef - C2 to G2 (Quarter Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_13_A4.pdf",
-              "pdf_size_a4_mb": 0.13
-            },
-            {
-              "number": 14,
-              "name": "Bass Clef - G1 to C2 (Quarter Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_14_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 15,
-              "name": "Bass Clef - G1 to C3 (Eighth, Quarter, Half, & Whole Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_15_A4.pdf",
-              "pdf_size_a4_mb": 0.29
-            },
-            {
-              "number": 16,
-              "name": "Bass Clef - Ledger Lines Below (E1 to B1, Quarter Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_16_A4.pdf",
-              "pdf_size_a4_mb": 0.13
-            },
-            {
-              "number": 17,
-              "name": "Treble Clef - C4 to C5 (Quarter Notes) with Accidentals",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_17_A4.pdf",
-              "pdf_size_a4_mb": 0.2
-            },
-            {
-              "number": 18,
-              "name": "Treble Clef - C4 to C5 (Quarter Notes) with Accidentals",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_18_A4.pdf",
-              "pdf_size_a4_mb": 0.2
-            },
-            {
-              "number": 19,
-              "name": "Treble Clef - C4 to C5 (Quarter Notes) with Accidentals",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_19_A4.pdf",
-              "pdf_size_a4_mb": 0.24
-            },
-            {
-              "number": 20,
-              "name": "Treble Clef - Ledger Lines Above (C5 to E6) with Accidentals (sharps)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_20_A4.pdf",
-              "pdf_size_a4_mb": 0.22
-            },
-            {
-              "number": 21,
-              "name": "Treble Clef - Ledger Lines Above (C5 to E6) with Accidentals (flats)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_21_A4.pdf",
-              "pdf_size_a4_mb": 0.31
-            },
-            {
-              "number": 22,
-              "name": "Treble Clef - Ledger Lines Above (C5 to E6) with Accidentals (sharps & flats)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_22_A4.pdf",
+              "number": 3,
+              "name": "Treble Clef III - Full Range, All Note Values",
+              "pages": 22,
+              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_03_A4.pdf",
               "pdf_size_a4_mb": 0.48
             },
             {
-              "number": 23,
-              "name": "Treble Clef - Ledger Lines Below (A3 to C4) with Accidentals (sharps)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_23_A4.pdf",
-              "pdf_size_a4_mb": 0.14
+              "number": 4,
+              "name": "Bass Clef I - First Notes",
+              "pages": 22,
+              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.34
             },
             {
-              "number": 24,
-              "name": "Treble Clef - Ledger Lines Below (A3 to C4) with Accidentals (flats)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_24_A4.pdf",
-              "pdf_size_a4_mb": 0.17
-            },
-            {
-              "number": 25,
-              "name": "Treble Clef - Ledger Lines Below (A3 to C4) with Accidentals (sharps & flats)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_25_A4.pdf",
+              "number": 5,
+              "name": "Bass Clef II - Full Range",
+              "pages": 22,
+              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_05_A4.pdf",
               "pdf_size_a4_mb": 0.3
             },
             {
-              "number": 26,
-              "name": "Bass Clef - Ledger Lines Above (C3 to E3) with Accidentals (sharps)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_26_A4.pdf",
-              "pdf_size_a4_mb": 0.14
-            },
-            {
-              "number": 27,
-              "name": "Bass Clef - Ledger Lines Above (C3 to E3) with Accidentals (flats)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_27_A4.pdf",
-              "pdf_size_a4_mb": 0.16
-            },
-            {
-              "number": 28,
-              "name": "Bass Clef - Ledger Lines Above (C3 to E3) with Accidentals (sharps & flats)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_28_A4.pdf",
-              "pdf_size_a4_mb": 0.28
-            },
-            {
-              "number": 29,
-              "name": "Bass Clef - Ledger Lines Below (E1 to B1) with Accidentals (sharps)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_29_A4.pdf",
-              "pdf_size_a4_mb": 0.15
-            },
-            {
-              "number": 30,
-              "name": "Bass Clef - Ledger Lines Below (E1 to B1) with Accidentals (flats)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_30_A4.pdf",
-              "pdf_size_a4_mb": 0.19
-            },
-            {
-              "number": 31,
-              "name": "Bass Clef - Ledger Lines Below (E1 to B1) with Accidentals (sharps & flats)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_31_A4.pdf",
+              "number": 6,
+              "name": "Bass Clef III - Low Notes & Ledger Lines",
+              "pages": 22,
+              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_06_A4.pdf",
               "pdf_size_a4_mb": 0.33
             },
             {
-              "number": 32,
-              "name": "Mixed Clef - Treble C4-C5 & Bass C2-C3 (Quarter Notes)",
-              "pages": 9,
-              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_32_A4.pdf",
-              "pdf_size_a4_mb": 0.19
+              "number": 7,
+              "name": "Treble Clef - Accidentals",
+              "pages": 22,
+              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 0.42
+            },
+            {
+              "number": 8,
+              "name": "Treble Clef - Ledger Lines with Accidentals",
+              "pages": 22,
+              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 0.77
+            },
+            {
+              "number": 9,
+              "name": "Bass Clef - Ledger Lines with Accidentals",
+              "pages": 22,
+              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_09_A4.pdf",
+              "pdf_size_a4_mb": 0.56
+            },
+            {
+              "number": 10,
+              "name": "Mixed Clef Mastery",
+              "pages": 22,
+              "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_10_A4.pdf",
+              "pdf_size_a4_mb": 0.2
             }
           ]
         },
