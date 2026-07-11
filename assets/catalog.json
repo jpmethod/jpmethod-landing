@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-11T00:37:07.035161",
+  "generated": "2026-07-11T11:00:51.230292",
   "sections": [
     {
       "name": "Mathematics",
@@ -1423,6 +1423,20 @@
               "pdf_size_a4_mb": 0.12
             }
           ]
+        },
+        {
+          "name": "Spanish Level B",
+          "description": "Practical and holiday conversation - ordering, hotels, small talk and idioms",
+          "slug": "spanish-level-b",
+          "pdf_path": "downloads/spanish-level-b/JPMethod_Spanish_Level_B.pdf",
+          "pdf_size_mb": 0.5,
+          "samples": [
+            "assets/samples/spanish-level-b/sample_1.png",
+            "assets/samples/spanish-level-b/sample_2.png"
+          ],
+          "pages": 197,
+          "pdf_path_a4": "downloads/spanish-level-b/JPMethod_Spanish_Level_B_A4.pdf",
+          "pdf_size_a4_mb": 0.5
         }
       ]
     }
