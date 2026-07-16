@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-16T10:03:52.053675",
+  "generated": "2026-07-16T14:16:12.557020",
   "sections": [
     {
       "name": "Mathematics",
@@ -17,8 +17,11 @@
           ],
           "pages": 254,
           "sections": 10,
+          "level": "A",
           "pdf_path_a4": "downloads/signed-arithmetic/JPMethod_Signed_Arithmetic_A4.pdf",
           "pdf_size_a4_mb": 1.0,
+          "pdf_path_2up": "downloads/signed-arithmetic/JPMethod_Signed_Arithmetic_2up.pdf",
+          "pdf_size_2up_mb": 1.0,
           "chapters": [
             {
               "number": 1,
@@ -90,8 +93,7 @@
               "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.13
             }
-          ],
-          "level": "A"
+          ]
         },
         {
           "name": "Non-Verbal Reasoning",
@@ -105,8 +107,11 @@
           ],
           "pages": 224,
           "sections": 10,
+          "level": "A",
           "pdf_path_a4": "downloads/non-verbal-reasoning/JPMethod_Non-Verbal_Reasoning_A4.pdf",
           "pdf_size_a4_mb": 6.2,
+          "pdf_path_2up": "downloads/non-verbal-reasoning/JPMethod_Non-Verbal_Reasoning_2up.pdf",
+          "pdf_size_2up_mb": 6.2,
           "chapters": [
             {
               "number": 1,
@@ -178,8 +183,7 @@
               "pdf_path_a4": "downloads/non-verbal-reasoning/chapters/JPMethod_Non-Verbal_Reasoning_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.71
             }
-          ],
-          "level": "A"
+          ]
         },
         {
           "name": "Multiplication: Times Tables to 15x",
@@ -193,8 +197,11 @@
           ],
           "pages": 254,
           "sections": 10,
+          "level": "B",
           "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/JPMethod_Multiplication_Times_Tables_to_15x_A4.pdf",
           "pdf_size_a4_mb": 0.9,
+          "pdf_path_2up": "downloads/multiplication-times-tables-to-15x/JPMethod_Multiplication_Times_Tables_to_15x_2up.pdf",
+          "pdf_size_2up_mb": 0.9,
           "chapters": [
             {
               "number": 1,
@@ -266,8 +273,7 @@
               "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.12
             }
-          ],
-          "level": "B"
+          ]
         },
         {
           "name": "Large Multiplication & Division",
@@ -281,8 +287,11 @@
           ],
           "pages": 254,
           "sections": 10,
+          "level": "C",
           "pdf_path_a4": "downloads/large-multiplication-and-division/JPMethod_Large_Multiplication_&_Division_A4.pdf",
           "pdf_size_a4_mb": 1.0,
+          "pdf_path_2up": "downloads/large-multiplication-and-division/JPMethod_Large_Multiplication_&_Division_2up.pdf",
+          "pdf_size_2up_mb": 0.9,
           "chapters": [
             {
               "number": 1,
@@ -354,8 +363,7 @@
               "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.12
             }
-          ],
-          "level": "C"
+          ]
         },
         {
           "name": "Long Division",
@@ -369,8 +377,11 @@
           ],
           "pages": 456,
           "sections": 10,
+          "level": "D",
           "pdf_path_a4": "downloads/long-division/JPMethod_Long_Division_A4.pdf",
           "pdf_size_a4_mb": 1.8,
+          "pdf_path_2up": "downloads/long-division/JPMethod_Long_Division_2up.pdf",
+          "pdf_size_2up_mb": 1.8,
           "chapters": [
             {
               "number": 1,
@@ -442,8 +453,7 @@
               "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.15
             }
-          ],
-          "level": "D"
+          ]
         },
         {
           "name": "Decimal Operations",
@@ -457,8 +467,11 @@
           ],
           "pages": 254,
           "sections": 10,
+          "level": "E",
           "pdf_path_a4": "downloads/decimal-operations/JPMethod_Decimal_Operations_A4.pdf",
           "pdf_size_a4_mb": 1.0,
+          "pdf_path_2up": "downloads/decimal-operations/JPMethod_Decimal_Operations_2up.pdf",
+          "pdf_size_2up_mb": 1.0,
           "chapters": [
             {
               "number": 1,
@@ -530,8 +543,7 @@
               "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.13
             }
-          ],
-          "level": "E"
+          ]
         },
         {
           "name": "Polynomials & Quadratic Equations",
@@ -545,8 +557,11 @@
           ],
           "pages": 254,
           "sections": 10,
+          "level": "F",
           "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations_A4.pdf",
           "pdf_size_a4_mb": 9.7,
+          "pdf_path_2up": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations_2up.pdf",
+          "pdf_size_2up_mb": 9.7,
           "chapters": [
             {
               "number": 1,
@@ -618,8 +633,7 @@
               "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.41
             }
-          ],
-          "level": "F"
+          ]
         }
       ]
     },
@@ -639,8 +653,11 @@
           ],
           "pages": 224,
           "sections": 10,
+          "level": "A",
           "pdf_path_a4": "downloads/music-notation/JPMethod_Music_Notation_A4.pdf",
           "pdf_size_a4_mb": 2.5,
+          "pdf_path_2up": "downloads/music-notation/JPMethod_Music_Notation_2up.pdf",
+          "pdf_size_2up_mb": 2.5,
           "chapters": [
             {
               "number": 1,
@@ -712,8 +729,7 @@
               "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.2
             }
-          ],
-          "level": "A"
+          ]
         },
         {
           "name": "Key Signatures",
@@ -727,8 +743,11 @@
           ],
           "pages": 224,
           "sections": 10,
+          "level": "B",
           "pdf_path_a4": "downloads/key-signatures/JPMethod_Key_Signatures_A4.pdf",
           "pdf_size_a4_mb": 1.5,
+          "pdf_path_2up": "downloads/key-signatures/JPMethod_Key_Signatures_2up.pdf",
+          "pdf_size_2up_mb": 1.5,
           "chapters": [
             {
               "number": 1,
@@ -800,8 +819,7 @@
               "pdf_path_a4": "downloads/key-signatures/chapters/JPMethod_Key_Signatures_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.21
             }
-          ],
-          "level": "B"
+          ]
         }
       ]
     },
@@ -821,8 +839,11 @@
           ],
           "pages": 221,
           "sections": 10,
+          "level": "A",
           "pdf_path_a4": "downloads/english-sentence-construction/JPMethod_English_Sentence_Construction_A4.pdf",
           "pdf_size_a4_mb": 1.4,
+          "pdf_path_2up": "downloads/english-sentence-construction/JPMethod_English_Sentence_Construction_2up.pdf",
+          "pdf_size_2up_mb": 1.4,
           "chapters": [
             {
               "number": 1,
@@ -894,8 +915,7 @@
               "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.14
             }
-          ],
-          "level": "A"
+          ]
         }
       ]
     },
@@ -915,8 +935,11 @@
           ],
           "pages": 459,
           "sections": 10,
+          "level": "A",
           "pdf_path_a4": "downloads/european-geography/JPMethod_European_Geography_A4.pdf",
           "pdf_size_a4_mb": 1.9,
+          "pdf_path_2up": "downloads/european-geography/JPMethod_European_Geography_2up.pdf",
+          "pdf_size_2up_mb": 1.9,
           "chapters": [
             {
               "number": 1,
@@ -988,8 +1011,7 @@
               "pdf_path_a4": "downloads/european-geography/chapters/JPMethod_European_Geography_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.18
             }
-          ],
-          "level": "A"
+          ]
         },
         {
           "name": "World Geography",
@@ -1003,8 +1025,11 @@
           ],
           "pages": 411,
           "sections": 10,
+          "level": "B",
           "pdf_path_a4": "downloads/world-geography/JPMethod_World_Geography_A4.pdf",
           "pdf_size_a4_mb": 8.7,
+          "pdf_path_2up": "downloads/world-geography/JPMethod_World_Geography_2up.pdf",
+          "pdf_size_2up_mb": 8.7,
           "chapters": [
             {
               "number": 1,
@@ -1076,8 +1101,7 @@
               "pdf_path_a4": "downloads/world-geography/chapters/JPMethod_World_Geography_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 1.01
             }
-          ],
-          "level": "B"
+          ]
         },
         {
           "name": "Europe Blank Maps",
@@ -1091,8 +1115,11 @@
           ],
           "pages": 214,
           "sections": 10,
+          "level": "C",
           "pdf_path_a4": "downloads/europe-blank-maps/JPMethod_Europe_Blank_Maps_A4.pdf",
           "pdf_size_a4_mb": 22.1,
+          "pdf_path_2up": "downloads/europe-blank-maps/JPMethod_Europe_Blank_Maps_2up.pdf",
+          "pdf_size_2up_mb": 22.1,
           "chapters": [
             {
               "number": 1,
@@ -1164,8 +1191,7 @@
               "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 7.71
             }
-          ],
-          "level": "C"
+          ]
         },
         {
           "name": "World Blank Maps",
@@ -1179,8 +1205,11 @@
           ],
           "pages": 214,
           "sections": 10,
+          "level": "D",
           "pdf_path_a4": "downloads/world-blank-maps/JPMethod_World_Blank_Maps_A4.pdf",
           "pdf_size_a4_mb": 23.4,
+          "pdf_path_2up": "downloads/world-blank-maps/JPMethod_World_Blank_Maps_2up.pdf",
+          "pdf_size_2up_mb": 23.4,
           "chapters": [
             {
               "number": 1,
@@ -1252,8 +1281,7 @@
               "pdf_path_a4": "downloads/world-blank-maps/chapters/JPMethod_World_Blank_Maps_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 7.44
             }
-          ],
-          "level": "D"
+          ]
         }
       ]
     },
@@ -1273,8 +1301,11 @@
           ],
           "pages": 254,
           "sections": 10,
+          "level": "A",
           "pdf_path_a4": "downloads/spanish-language/JPMethod_Spanish_Language_A4.pdf",
           "pdf_size_a4_mb": 1.0,
+          "pdf_path_2up": "downloads/spanish-language/JPMethod_Spanish_Language_2up.pdf",
+          "pdf_size_2up_mb": 1.0,
           "chapters": [
             {
               "number": 1,
@@ -1346,8 +1377,7 @@
               "pdf_path_a4": "downloads/spanish-language/chapters/JPMethod_Spanish_Language_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.13
             }
-          ],
-          "level": "A"
+          ]
         },
         {
           "name": "Spanish Level B",
@@ -1361,8 +1391,11 @@
           ],
           "pages": 241,
           "sections": 10,
+          "level": "B",
           "pdf_path_a4": "downloads/spanish-level-b/JPMethod_Spanish_Level_B_A4.pdf",
           "pdf_size_a4_mb": 0.6,
+          "pdf_path_2up": "downloads/spanish-level-b/JPMethod_Spanish_Level_B_2up.pdf",
+          "pdf_size_2up_mb": 0.6,
           "chapters": [
             {
               "number": 1,
@@ -1434,8 +1467,7 @@
               "pdf_path_a4": "downloads/spanish-level-b/chapters/JPMethod_Spanish_Level_B_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.16
             }
-          ],
-          "level": "B"
+          ]
         },
         {
           "name": "Spanish Level C",
@@ -1449,8 +1481,11 @@
           ],
           "pages": 243,
           "sections": 10,
+          "level": "C",
           "pdf_path_a4": "downloads/spanish-level-c/JPMethod_Spanish_Level_C_A4.pdf",
           "pdf_size_a4_mb": 0.6,
+          "pdf_path_2up": "downloads/spanish-level-c/JPMethod_Spanish_Level_C_2up.pdf",
+          "pdf_size_2up_mb": 0.6,
           "chapters": [
             {
               "number": 1,
@@ -1522,8 +1557,7 @@
               "pdf_path_a4": "downloads/spanish-level-c/chapters/JPMethod_Spanish_Level_C_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.16
             }
-          ],
-          "level": "C"
+          ]
         }
       ]
     }

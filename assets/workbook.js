@@ -60,9 +60,15 @@ function downloadBlock(d) {
   if (d.pdf_path_a4) {
     html += '<a class="btn a5 big" href="/' + d.pdf_path_a4 + '" download>' +
       'Download the A4 booklet <small>' + d.pdf_size_a4_mb + ' MB</small></a>';
-    html += '<span class="cta-secondary">Reading on a tablet, or printing one page ' +
-      'per sheet? <a href="/' + d.pdf_path + '" download>Download the sequential PDF</a> ' +
-      '(' + d.pdf_size_mb + ' MB).</span>';
+    var alts = '';
+    if (d.pdf_path_2up) {
+      alts += 'No double-sided printer? <a href="/' + d.pdf_path_2up + '" download>' +
+        'Print at home on any printer</a> (' + d.pdf_size_2up_mb + ' MB) — two ' +
+        'worksheets per A4 sheet, single-sided. ';
+    }
+    alts += 'Reading on a tablet? <a href="/' + d.pdf_path + '" download>' +
+      'Download the single-page PDF</a> (' + d.pdf_size_mb + ' MB).';
+    html += '<span class="cta-secondary">' + alts + '</span>';
   } else {
     html += '<a class="btn a5 big" href="/' + d.pdf_path + '" download>' +
       'Download the PDF <small>' + d.pdf_size_mb + ' MB</small></a>';
