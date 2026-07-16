@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About the method &amp; levels | JP Method</title>
+<meta name="description" content="How JP Method workbooks work: ten sections of twenty short practice sheets, answer keys at the back, and level bands that step up within each subject.">
+<link rel="canonical" href="https://jpmethod.org/about/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jpmethod.org/about/">
+<meta property="og:title" content="About the method &amp; levels | JP Method">
+<meta property="og:description" content="How JP Method workbooks work: ten sections of twenty short practice sheets, answer keys at the back, and level bands that step up within each subject.">
+<meta name="theme-color" content="#0b5cad">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b5cad'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='bold' fill='%23fff' text-anchor='middle'%3EJP%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<header class="band slim">
+  <div class="wrap">
+    <div class="top">
+      <div class="wordmark"><a href="/">JP <span>Method</span></a></div>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour theme">Dark mode</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <a class="crumbs" href="/">&larr; All workbooks</a>
+
+  <header class="prodhead">
+    <h1>About the method</h1>
+    <p class="desc">Short daily practice, small steps, answers at the back — and a level
+    band on every workbook so you know where to start.</p>
+  </header>
+
+  <section class="prodsec">
+    <h2>How the workbooks work</h2>
+    <p class="intro">Every JP Method workbook has the same shape: <b>ten sections of
+    twenty short practice sheets</b>, with the full answer key at the back. Each sheet
+    takes about ten minutes. A section introduces one small idea and practises it until
+    it sticks, and each new section builds on the last — steady, unhurried repetition
+    rather than long worksheets.</p>
+    <p class="intro">The pages are A5, so a workbook prints as a fold-in-half A4 booklet
+    on any home printer, or reads comfortably on a tablet. You can also download any
+    single section as its own small booklet from the workbook's page.</p>
+  </section>
+
+  <section class="prodsec">
+    <h2>What the levels mean</h2>
+    <p class="intro">Each workbook carries a level band — <b>Level A, Level B, Level C…</b>
+    — which is its step on the ladder <b>within its own subject</b>. Level A is the entry
+    point; each following level assumes the ones before it. On the homepage, every
+    subject's shelf is ordered from Level A upwards, so reading a shelf left to right
+    reads the ladder bottom to top.</p>
+    <p class="intro">Levels are <b>not tied to age or school year</b> — children start
+    wherever the work feels comfortable. A good rule: start at Level A, and if the first
+    sections feel easy, let them run through the pages quickly and move up a level. The
+    early pages of every workbook are deliberately gentle; confidence first, then
+    difficulty.</p>
+    <p class="intro">Levels also don't compare across subjects — Level B in Spanish says
+    nothing about Level B in Mathematics. They are separate ladders.</p>
+  </section>
+
+  <section class="prodsec">
+    <h2>Free to use</h2>
+    <p class="intro">All workbooks are free to download, print and share for home and
+    classroom use — no sign-up, no accounts. Answer keys are always included.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> JP Method &middot; Free to print and share for home and classroom use.</span>
+    <span class="stamp"><a href="/">All workbooks</a></span>
+  </div>
+</footer>
+
+<script>
+  /* theme toggle — same storage key as the rest of the site */
+  (function () {
+    var btn = document.getElementById('themeBtn');
+    function paintBtn() {
+      var dark = document.documentElement.dataset.theme === 'dark';
+      btn.textContent = dark ? 'Light mode' : 'Dark mode';
+    }
+    var saved = null;
+    try { saved = localStorage.getItem('jpm-theme'); } catch (e) {}
+    document.documentElement.dataset.theme =
+      (saved === 'light' || saved === 'dark') ? saved : 'light';
+    paintBtn();
+    btn.addEventListener('click', function () {
+      var next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('jpm-theme', next); } catch (e) {}
+      paintBtn();
+    });
+  })();
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
