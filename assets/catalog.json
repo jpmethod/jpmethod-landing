@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-16T14:16:12.557020",
+  "generated": "2026-07-17T00:03:26.544621",
   "sections": [
     {
       "name": "Mathematics",
@@ -18,10 +18,6 @@
           "pages": 254,
           "sections": 10,
           "level": "A",
-          "pdf_path_a4": "downloads/signed-arithmetic/JPMethod_Signed_Arithmetic_A4.pdf",
-          "pdf_size_a4_mb": 1.0,
-          "pdf_path_2up": "downloads/signed-arithmetic/JPMethod_Signed_Arithmetic_2up.pdf",
-          "pdf_size_2up_mb": 1.0,
           "chapters": [
             {
               "number": 1,
@@ -198,10 +194,6 @@
           "pages": 254,
           "sections": 10,
           "level": "B",
-          "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/JPMethod_Multiplication_Times_Tables_to_15x_A4.pdf",
-          "pdf_size_a4_mb": 0.9,
-          "pdf_path_2up": "downloads/multiplication-times-tables-to-15x/JPMethod_Multiplication_Times_Tables_to_15x_2up.pdf",
-          "pdf_size_2up_mb": 0.9,
           "chapters": [
             {
               "number": 1,
@@ -288,10 +280,6 @@
           "pages": 254,
           "sections": 10,
           "level": "C",
-          "pdf_path_a4": "downloads/large-multiplication-and-division/JPMethod_Large_Multiplication_&_Division_A4.pdf",
-          "pdf_size_a4_mb": 1.0,
-          "pdf_path_2up": "downloads/large-multiplication-and-division/JPMethod_Large_Multiplication_&_Division_2up.pdf",
-          "pdf_size_2up_mb": 0.9,
           "chapters": [
             {
               "number": 1,
@@ -468,10 +456,6 @@
           "pages": 254,
           "sections": 10,
           "level": "E",
-          "pdf_path_a4": "downloads/decimal-operations/JPMethod_Decimal_Operations_A4.pdf",
-          "pdf_size_a4_mb": 1.0,
-          "pdf_path_2up": "downloads/decimal-operations/JPMethod_Decimal_Operations_2up.pdf",
-          "pdf_size_2up_mb": 1.0,
           "chapters": [
             {
               "number": 1,
@@ -840,10 +824,6 @@
           "pages": 221,
           "sections": 10,
           "level": "A",
-          "pdf_path_a4": "downloads/english-sentence-construction/JPMethod_English_Sentence_Construction_A4.pdf",
-          "pdf_size_a4_mb": 1.4,
-          "pdf_path_2up": "downloads/english-sentence-construction/JPMethod_English_Sentence_Construction_2up.pdf",
-          "pdf_size_2up_mb": 1.4,
           "chapters": [
             {
               "number": 1,
@@ -916,6 +896,186 @@
               "pdf_size_a4_mb": 0.14
             }
           ]
+        },
+        {
+          "name": "Vocabulary Builder",
+          "description": "Everyday words for reading - meanings, matching, and real sentences from classic books",
+          "slug": "vocabulary-builder",
+          "pdf_path": "downloads/vocabulary-builder/JPMethod_Vocabulary_Builder.pdf",
+          "pdf_size_mb": 0.5,
+          "samples": [
+            "assets/samples/vocabulary-builder/sample_1.png",
+            "assets/samples/vocabulary-builder/sample_2.png"
+          ],
+          "pages": 245,
+          "sections": 10,
+          "level": "B",
+          "pdf_path_a4": "downloads/vocabulary-builder/JPMethod_Vocabulary_Builder_A4.pdf",
+          "pdf_size_a4_mb": 0.6,
+          "pdf_path_2up": "downloads/vocabulary-builder/JPMethod_Vocabulary_Builder_2up.pdf",
+          "pdf_size_2up_mb": 0.6,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "Feelings",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder/chapters/JPMethod_Vocabulary_Builder_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 2,
+              "name": "Places and Buildings",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder/chapters/JPMethod_Vocabulary_Builder_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 3,
+              "name": "Actions",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder/chapters/JPMethod_Vocabulary_Builder_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 4,
+              "name": "Nature and Weather",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder/chapters/JPMethod_Vocabulary_Builder_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 5,
+              "name": "People",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder/chapters/JPMethod_Vocabulary_Builder_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 6,
+              "name": "Describing Things",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder/chapters/JPMethod_Vocabulary_Builder_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 7,
+              "name": "Looking and Moving",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder/chapters/JPMethod_Vocabulary_Builder_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 8,
+              "name": "Time and Change",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder/chapters/JPMethod_Vocabulary_Builder_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 9,
+              "name": "Talking and Thinking",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder/chapters/JPMethod_Vocabulary_Builder_Chapter_09_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 10,
+              "name": "Homes and Things",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder/chapters/JPMethod_Vocabulary_Builder_Chapter_10_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            }
+          ]
+        },
+        {
+          "name": "Vocabulary Builder: Wider Words",
+          "description": "A step up - wider, richer vocabulary with meanings, matching, and real sentences from classic books",
+          "slug": "vocabulary-builder-wider-words",
+          "pdf_path": "downloads/vocabulary-builder-wider-words/JPMethod_Vocabulary_Builder_Wider_Words.pdf",
+          "pdf_size_mb": 0.5,
+          "samples": [
+            "assets/samples/vocabulary-builder-wider-words/sample_1.png",
+            "assets/samples/vocabulary-builder-wider-words/sample_2.png"
+          ],
+          "pages": 245,
+          "sections": 10,
+          "level": "C",
+          "pdf_path_a4": "downloads/vocabulary-builder-wider-words/JPMethod_Vocabulary_Builder_Wider_Words_A4.pdf",
+          "pdf_size_a4_mb": 0.6,
+          "pdf_path_2up": "downloads/vocabulary-builder-wider-words/JPMethod_Vocabulary_Builder_Wider_Words_2up.pdf",
+          "pdf_size_2up_mb": 0.6,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "Strong Feelings",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder-wider-words/chapters/JPMethod_Vocabulary_Builder_Wider_Words_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 2,
+              "name": "Grand Buildings",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder-wider-words/chapters/JPMethod_Vocabulary_Builder_Wider_Words_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 3,
+              "name": "Vivid Actions",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder-wider-words/chapters/JPMethod_Vocabulary_Builder_Wider_Words_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 4,
+              "name": "Wild Nature",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder-wider-words/chapters/JPMethod_Vocabulary_Builder_Wider_Words_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 5,
+              "name": "People and Roles",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder-wider-words/chapters/JPMethod_Vocabulary_Builder_Wider_Words_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 6,
+              "name": "Powerful Describing Words",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder-wider-words/chapters/JPMethod_Vocabulary_Builder_Wider_Words_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 7,
+              "name": "Moving and Looking",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder-wider-words/chapters/JPMethod_Vocabulary_Builder_Wider_Words_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 8,
+              "name": "Time and Change",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder-wider-words/chapters/JPMethod_Vocabulary_Builder_Wider_Words_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 9,
+              "name": "Talking and Thinking",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder-wider-words/chapters/JPMethod_Vocabulary_Builder_Wider_Words_Chapter_09_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            },
+            {
+              "number": 10,
+              "name": "Fine Objects",
+              "pages": 24,
+              "pdf_path_a4": "downloads/vocabulary-builder-wider-words/chapters/JPMethod_Vocabulary_Builder_Wider_Words_Chapter_10_A4.pdf",
+              "pdf_size_a4_mb": 0.15
+            }
+          ]
         }
       ]
     },
@@ -936,10 +1096,6 @@
           "pages": 459,
           "sections": 10,
           "level": "A",
-          "pdf_path_a4": "downloads/european-geography/JPMethod_European_Geography_A4.pdf",
-          "pdf_size_a4_mb": 1.9,
-          "pdf_path_2up": "downloads/european-geography/JPMethod_European_Geography_2up.pdf",
-          "pdf_size_2up_mb": 1.9,
           "chapters": [
             {
               "number": 1,
@@ -1026,10 +1182,6 @@
           "pages": 411,
           "sections": 10,
           "level": "B",
-          "pdf_path_a4": "downloads/world-geography/JPMethod_World_Geography_A4.pdf",
-          "pdf_size_a4_mb": 8.7,
-          "pdf_path_2up": "downloads/world-geography/JPMethod_World_Geography_2up.pdf",
-          "pdf_size_2up_mb": 8.7,
           "chapters": [
             {
               "number": 1,
@@ -1302,10 +1454,6 @@
           "pages": 254,
           "sections": 10,
           "level": "A",
-          "pdf_path_a4": "downloads/spanish-language/JPMethod_Spanish_Language_A4.pdf",
-          "pdf_size_a4_mb": 1.0,
-          "pdf_path_2up": "downloads/spanish-language/JPMethod_Spanish_Language_2up.pdf",
-          "pdf_size_2up_mb": 1.0,
           "chapters": [
             {
               "number": 1,
