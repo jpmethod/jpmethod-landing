@@ -56,7 +56,7 @@
     </div>
     <div class="step">
       <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-      <div><b>Ten minutes a day</b><span>Short sheets build skills in small steps — check answers together at the back.</span></div>
+      <div><b>Ten minutes a day</b><span>Every workbook is ten sections of twenty short sheets — build skills in small steps and check answers at the back.</span></div>
     </div>
   </section>
 </div>
@@ -120,15 +120,15 @@
     var plate;
     if (hasSamples) {
       var n = domain.samples.length;
-      /* the pill states the real size of the workbook, not the preview */
-      var facts = [];
-      if (domain.sections) facts.push(domain.sections + ' section' + (domain.sections === 1 ? '' : 's'));
-      if (domain.pages) facts.push(domain.pages + ' pages');
+      /* every workbook now shares the 10-section / 20-page format, so the pill
+         states its level band (its step within the subject) instead */
+      var pill = domain.level ? 'Level ' + domain.level
+        : (domain.sections ? domain.sections + ' sections' : 'Preview');
       plate =
         '<button class="tile" type="button" aria-label="Preview ' + n + ' sample page' + (n === 1 ? '' : 's') + ' of ' + domain.name + '">' +
           '<img src="' + domain.samples[0] + '" loading="lazy" alt="Sample page of ' + domain.name + '">' +
         '</button>' +
-        '<span class="pages">' + (facts.length ? facts.join(' · ') : 'Preview') + '</span>';
+        '<span class="pages">' + pill + '</span>';
     } else {
       plate = '<div class="tile"><div class="placeholder">Preview coming soon</div></div>';
     }

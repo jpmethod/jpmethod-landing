@@ -90,181 +90,8 @@
               "pdf_path_a4": "downloads/signed-arithmetic/chapters/JPMethod_Signed_Arithmetic_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.13
             }
-          ]
-        },
-        {
-          "name": "Multiplication: Times Tables to 15x",
-          "description": "Extended times tables beyond 12x12, one table at a time up to 15x",
-          "slug": "multiplication-times-tables-to-15x",
-          "pdf_path": "downloads/multiplication-times-tables-to-15x/JPMethod_Multiplication_Times_Tables_to_15x.pdf",
-          "pdf_size_mb": 0.8,
-          "samples": [
-            "assets/samples/multiplication-times-tables-to-15x/sample_1.png",
-            "assets/samples/multiplication-times-tables-to-15x/sample_2.png"
           ],
-          "pages": 254,
-          "sections": 10,
-          "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/JPMethod_Multiplication_Times_Tables_to_15x_A4.pdf",
-          "pdf_size_a4_mb": 0.9,
-          "chapters": [
-            {
-              "number": 1,
-              "name": "Revision: 6x6 to 9x9",
-              "pages": 25,
-              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_01_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 2,
-              "name": "Multiplication: 2x11 to 9x16",
-              "pages": 25,
-              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_02_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 3,
-              "name": "The 12x Table: 12x10 to 12x20",
-              "pages": 25,
-              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_03_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 4,
-              "name": "Revision: 6-12 x 6-20",
-              "pages": 25,
-              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_04_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 5,
-              "name": "The 13x Table: 13x10 to 13x20",
-              "pages": 25,
-              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_05_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 6,
-              "name": "Revision: 6-13 x 6-20",
-              "pages": 25,
-              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_06_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 7,
-              "name": "The 14x Table: 14x10 to 14x21",
-              "pages": 25,
-              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_07_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 8,
-              "name": "Revision: 6-14 x 6-21",
-              "pages": 25,
-              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_08_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 9,
-              "name": "The 15x Table: 15x10 to 15x22",
-              "pages": 25,
-              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_09_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 10,
-              "name": "Cumulative Revision: 6-15 x 6-22",
-              "pages": 25,
-              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_10_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            }
-          ]
-        },
-        {
-          "name": "Large Multiplication & Division",
-          "description": "Large number multiplication and division practice up to 25x25",
-          "slug": "large-multiplication-and-division",
-          "pdf_path": "downloads/large-multiplication-and-division/JPMethod_Large_Multiplication_&_Division.pdf",
-          "pdf_size_mb": 0.9,
-          "samples": [
-            "assets/samples/large-multiplication-and-division/sample_1.png",
-            "assets/samples/large-multiplication-and-division/sample_2.png"
-          ],
-          "pages": 254,
-          "sections": 10,
-          "pdf_path_a4": "downloads/large-multiplication-and-division/JPMethod_Large_Multiplication_&_Division_A4.pdf",
-          "pdf_size_a4_mb": 1.0,
-          "chapters": [
-            {
-              "number": 1,
-              "name": "Multiplication: 16x16 to 18x18",
-              "pages": 25,
-              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_01_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 2,
-              "name": "Division I: Up to 144 / 12",
-              "pages": 25,
-              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_02_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 3,
-              "name": "Mixed Multiplication & Division: 10-15",
-              "pages": 25,
-              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_03_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 4,
-              "name": "Revision: 6-16 x 6-22",
-              "pages": 25,
-              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_04_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 5,
-              "name": "Multiplication: 19x19 to 20x20",
-              "pages": 25,
-              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_05_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 6,
-              "name": "Division II: Up to 225 / 15",
-              "pages": 25,
-              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_06_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 7,
-              "name": "Mixed Multiplication & Division: 15-20",
-              "pages": 25,
-              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_07_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 8,
-              "name": "Multiplication 21-22 & Division III: Up to 625 / 25",
-              "pages": 25,
-              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_08_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 9,
-              "name": "Mixed Multiplication & Division: 20-22",
-              "pages": 25,
-              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_09_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            },
-            {
-              "number": 10,
-              "name": "Finale: 23x23 to 25x25 & Cumulative Review",
-              "pages": 25,
-              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_10_A4.pdf",
-              "pdf_size_a4_mb": 0.12
-            }
-          ]
+          "level": "A"
         },
         {
           "name": "Non-Verbal Reasoning",
@@ -351,181 +178,184 @@
               "pdf_path_a4": "downloads/non-verbal-reasoning/chapters/JPMethod_Non-Verbal_Reasoning_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.71
             }
-          ]
+          ],
+          "level": "A"
         },
         {
-          "name": "Polynomials & Quadratic Equations",
-          "description": "Master polynomial manipulation and quadratic equation solving",
-          "slug": "polynomials-and-quadratic-equations",
-          "pdf_path": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations.pdf",
-          "pdf_size_mb": 9.6,
+          "name": "Multiplication: Times Tables to 15x",
+          "description": "Extended times tables beyond 12x12, one table at a time up to 15x",
+          "slug": "multiplication-times-tables-to-15x",
+          "pdf_path": "downloads/multiplication-times-tables-to-15x/JPMethod_Multiplication_Times_Tables_to_15x.pdf",
+          "pdf_size_mb": 0.8,
           "samples": [
-            "assets/samples/polynomials-and-quadratic-equations/sample_1.png",
-            "assets/samples/polynomials-and-quadratic-equations/sample_2.png"
+            "assets/samples/multiplication-times-tables-to-15x/sample_1.png",
+            "assets/samples/multiplication-times-tables-to-15x/sample_2.png"
           ],
           "pages": 254,
           "sections": 10,
-          "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations_A4.pdf",
-          "pdf_size_a4_mb": 9.7,
+          "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/JPMethod_Multiplication_Times_Tables_to_15x_A4.pdf",
+          "pdf_size_a4_mb": 0.9,
           "chapters": [
             {
               "number": 1,
-              "name": "Multiplication of Polynomials I",
+              "name": "Revision: 6x6 to 9x9",
               "pages": 25,
-              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_01_A4.pdf",
-              "pdf_size_a4_mb": 1.27
+              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 2,
-              "name": "Multiplication of Polynomials II",
+              "name": "Multiplication: 2x11 to 9x16",
               "pages": 25,
-              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_02_A4.pdf",
-              "pdf_size_a4_mb": 1.29
+              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 3,
-              "name": "Multiplication Using Formulas",
+              "name": "The 12x Table: 12x10 to 12x20",
               "pages": 25,
-              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_03_A4.pdf",
-              "pdf_size_a4_mb": 0.68
+              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 4,
-              "name": "Factorisation I",
+              "name": "Revision: 6-12 x 6-20",
               "pages": 25,
-              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_04_A4.pdf",
-              "pdf_size_a4_mb": 1.4
+              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 5,
-              "name": "Factorisation II",
+              "name": "The 13x Table: 13x10 to 13x20",
               "pages": 25,
-              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_05_A4.pdf",
-              "pdf_size_a4_mb": 1.25
+              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 6,
-              "name": "Square Roots",
+              "name": "Revision: 6-13 x 6-20",
               "pages": 25,
-              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_06_A4.pdf",
-              "pdf_size_a4_mb": 0.45
+              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 7,
-              "name": "Quadratic Equations I",
+              "name": "The 14x Table: 14x10 to 14x21",
               "pages": 25,
-              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_07_A4.pdf",
-              "pdf_size_a4_mb": 0.91
+              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 8,
-              "name": "Quadratic Equations II",
+              "name": "Revision: 6-14 x 6-21",
               "pages": 25,
-              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_08_A4.pdf",
-              "pdf_size_a4_mb": 0.95
+              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 9,
-              "name": "Graphs of Quadratic Functions",
+              "name": "The 15x Table: 15x10 to 15x22",
               "pages": 25,
-              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_09_A4.pdf",
-              "pdf_size_a4_mb": 0.91
+              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_09_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 10,
-              "name": "The Pythagorean Theorem",
+              "name": "Cumulative Revision: 6-15 x 6-22",
               "pages": 25,
-              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_10_A4.pdf",
-              "pdf_size_a4_mb": 0.41
+              "pdf_path_a4": "downloads/multiplication-times-tables-to-15x/chapters/JPMethod_Multiplication_Times_Tables_to_15x_Chapter_10_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             }
-          ]
+          ],
+          "level": "B"
         },
         {
-          "name": "Decimal Operations",
-          "description": "Practice decimal arithmetic and conversions",
-          "slug": "decimal-operations",
-          "pdf_path": "downloads/decimal-operations/JPMethod_Decimal_Operations.pdf",
+          "name": "Large Multiplication & Division",
+          "description": "Large number multiplication and division practice up to 25x25",
+          "slug": "large-multiplication-and-division",
+          "pdf_path": "downloads/large-multiplication-and-division/JPMethod_Large_Multiplication_&_Division.pdf",
           "pdf_size_mb": 0.9,
           "samples": [
-            "assets/samples/decimal-operations/sample_1.png",
-            "assets/samples/decimal-operations/sample_2.png"
+            "assets/samples/large-multiplication-and-division/sample_1.png",
+            "assets/samples/large-multiplication-and-division/sample_2.png"
           ],
           "pages": 254,
           "sections": 10,
-          "pdf_path_a4": "downloads/decimal-operations/JPMethod_Decimal_Operations_A4.pdf",
+          "pdf_path_a4": "downloads/large-multiplication-and-division/JPMethod_Large_Multiplication_&_Division_A4.pdf",
           "pdf_size_a4_mb": 1.0,
           "chapters": [
             {
               "number": 1,
-              "name": "Decimal Addition (1 decimal place)",
+              "name": "Multiplication: 16x16 to 18x18",
               "pages": 25,
-              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_01_A4.pdf",
-              "pdf_size_a4_mb": 0.13
+              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 2,
-              "name": "Decimal Subtraction (1 decimal place)",
+              "name": "Division I: Up to 144 / 12",
               "pages": 25,
-              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_02_A4.pdf",
-              "pdf_size_a4_mb": 0.13
+              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 3,
-              "name": "Mixed Add/Subtract (1 decimal place)",
+              "name": "Mixed Multiplication & Division: 10-15",
               "pages": 25,
-              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_03_A4.pdf",
-              "pdf_size_a4_mb": 0.13
+              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 4,
-              "name": "Decimal Addition (2 decimal places)",
+              "name": "Revision: 6-16 x 6-22",
               "pages": 25,
-              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_04_A4.pdf",
-              "pdf_size_a4_mb": 0.13
+              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 5,
-              "name": "Decimal Subtraction (2 decimal places)",
+              "name": "Multiplication: 19x19 to 20x20",
               "pages": 25,
-              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_05_A4.pdf",
-              "pdf_size_a4_mb": 0.13
+              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 6,
-              "name": "Mixed Add/Subtract (2 decimal places)",
+              "name": "Division II: Up to 225 / 15",
               "pages": 25,
-              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_06_A4.pdf",
-              "pdf_size_a4_mb": 0.13
+              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 7,
-              "name": "Simple Decimal Multiplication",
+              "name": "Mixed Multiplication & Division: 15-20",
               "pages": 25,
-              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_07_A4.pdf",
-              "pdf_size_a4_mb": 0.13
+              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 8,
-              "name": "Decimal \u00d7 Decimal Multiplication",
+              "name": "Multiplication 21-22 & Division III: Up to 625 / 25",
               "pages": 25,
-              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_08_A4.pdf",
-              "pdf_size_a4_mb": 0.13
+              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 9,
-              "name": "Simple Decimal Division",
+              "name": "Mixed Multiplication & Division: 20-22",
               "pages": 25,
-              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_09_A4.pdf",
-              "pdf_size_a4_mb": 0.13
+              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_09_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             },
             {
               "number": 10,
-              "name": "Mixed Operations (All Four Operations)",
+              "name": "Finale: 23x23 to 25x25 & Cumulative Review",
               "pages": 25,
-              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_10_A4.pdf",
-              "pdf_size_a4_mb": 0.13
+              "pdf_path_a4": "downloads/large-multiplication-and-division/chapters/JPMethod_Large_Multiplication_&_Division_Chapter_10_A4.pdf",
+              "pdf_size_a4_mb": 0.12
             }
-          ]
+          ],
+          "level": "C"
         },
         {
           "name": "Long Division",
@@ -612,7 +442,184 @@
               "pdf_path_a4": "downloads/long-division/chapters/JPMethod_Long_Division_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.15
             }
-          ]
+          ],
+          "level": "D"
+        },
+        {
+          "name": "Decimal Operations",
+          "description": "Practice decimal arithmetic and conversions",
+          "slug": "decimal-operations",
+          "pdf_path": "downloads/decimal-operations/JPMethod_Decimal_Operations.pdf",
+          "pdf_size_mb": 0.9,
+          "samples": [
+            "assets/samples/decimal-operations/sample_1.png",
+            "assets/samples/decimal-operations/sample_2.png"
+          ],
+          "pages": 254,
+          "sections": 10,
+          "pdf_path_a4": "downloads/decimal-operations/JPMethod_Decimal_Operations_A4.pdf",
+          "pdf_size_a4_mb": 1.0,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "Decimal Addition (1 decimal place)",
+              "pages": 25,
+              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.13
+            },
+            {
+              "number": 2,
+              "name": "Decimal Subtraction (1 decimal place)",
+              "pages": 25,
+              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.13
+            },
+            {
+              "number": 3,
+              "name": "Mixed Add/Subtract (1 decimal place)",
+              "pages": 25,
+              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.13
+            },
+            {
+              "number": 4,
+              "name": "Decimal Addition (2 decimal places)",
+              "pages": 25,
+              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.13
+            },
+            {
+              "number": 5,
+              "name": "Decimal Subtraction (2 decimal places)",
+              "pages": 25,
+              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 0.13
+            },
+            {
+              "number": 6,
+              "name": "Mixed Add/Subtract (2 decimal places)",
+              "pages": 25,
+              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 0.13
+            },
+            {
+              "number": 7,
+              "name": "Simple Decimal Multiplication",
+              "pages": 25,
+              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 0.13
+            },
+            {
+              "number": 8,
+              "name": "Decimal \u00d7 Decimal Multiplication",
+              "pages": 25,
+              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 0.13
+            },
+            {
+              "number": 9,
+              "name": "Simple Decimal Division",
+              "pages": 25,
+              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_09_A4.pdf",
+              "pdf_size_a4_mb": 0.13
+            },
+            {
+              "number": 10,
+              "name": "Mixed Operations (All Four Operations)",
+              "pages": 25,
+              "pdf_path_a4": "downloads/decimal-operations/chapters/JPMethod_Decimal_Operations_Chapter_10_A4.pdf",
+              "pdf_size_a4_mb": 0.13
+            }
+          ],
+          "level": "E"
+        },
+        {
+          "name": "Polynomials & Quadratic Equations",
+          "description": "Master polynomial manipulation and quadratic equation solving",
+          "slug": "polynomials-and-quadratic-equations",
+          "pdf_path": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations.pdf",
+          "pdf_size_mb": 9.6,
+          "samples": [
+            "assets/samples/polynomials-and-quadratic-equations/sample_1.png",
+            "assets/samples/polynomials-and-quadratic-equations/sample_2.png"
+          ],
+          "pages": 254,
+          "sections": 10,
+          "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/JPMethod_Polynomials_&_Quadratic_Equations_A4.pdf",
+          "pdf_size_a4_mb": 9.7,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "Multiplication of Polynomials I",
+              "pages": 25,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 1.27
+            },
+            {
+              "number": 2,
+              "name": "Multiplication of Polynomials II",
+              "pages": 25,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 1.29
+            },
+            {
+              "number": 3,
+              "name": "Multiplication Using Formulas",
+              "pages": 25,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.68
+            },
+            {
+              "number": 4,
+              "name": "Factorisation I",
+              "pages": 25,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 1.4
+            },
+            {
+              "number": 5,
+              "name": "Factorisation II",
+              "pages": 25,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 1.25
+            },
+            {
+              "number": 6,
+              "name": "Square Roots",
+              "pages": 25,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 0.45
+            },
+            {
+              "number": 7,
+              "name": "Quadratic Equations I",
+              "pages": 25,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 0.91
+            },
+            {
+              "number": 8,
+              "name": "Quadratic Equations II",
+              "pages": 25,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 0.95
+            },
+            {
+              "number": 9,
+              "name": "Graphs of Quadratic Functions",
+              "pages": 25,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_09_A4.pdf",
+              "pdf_size_a4_mb": 0.91
+            },
+            {
+              "number": 10,
+              "name": "The Pythagorean Theorem",
+              "pages": 25,
+              "pdf_path_a4": "downloads/polynomials-and-quadratic-equations/chapters/JPMethod_Polynomials_&_Quadratic_Equations_Chapter_10_A4.pdf",
+              "pdf_size_a4_mb": 0.41
+            }
+          ],
+          "level": "F"
         }
       ]
     },
@@ -705,7 +712,8 @@
               "pdf_path_a4": "downloads/music-notation/chapters/JPMethod_Music_Notation_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.2
             }
-          ]
+          ],
+          "level": "A"
         },
         {
           "name": "Key Signatures",
@@ -792,7 +800,8 @@
               "pdf_path_a4": "downloads/key-signatures/chapters/JPMethod_Key_Signatures_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.21
             }
-          ]
+          ],
+          "level": "B"
         }
       ]
     },
@@ -885,7 +894,8 @@
               "pdf_path_a4": "downloads/english-sentence-construction/chapters/JPMethod_English_Sentence_Construction_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.14
             }
-          ]
+          ],
+          "level": "A"
         }
       ]
     },
@@ -978,94 +988,8 @@
               "pdf_path_a4": "downloads/european-geography/chapters/JPMethod_European_Geography_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.18
             }
-          ]
-        },
-        {
-          "name": "Europe Blank Maps",
-          "description": "Identify European countries from their outline on a blank map",
-          "slug": "europe-blank-maps",
-          "pdf_path": "downloads/europe-blank-maps/JPMethod_Europe_Blank_Maps.pdf",
-          "pdf_size_mb": 22.1,
-          "samples": [
-            "assets/samples/europe-blank-maps/sample_1.png",
-            "assets/samples/europe-blank-maps/sample_2.png"
           ],
-          "pages": 214,
-          "sections": 10,
-          "pdf_path_a4": "downloads/europe-blank-maps/JPMethod_Europe_Blank_Maps_A4.pdf",
-          "pdf_size_a4_mb": 22.1,
-          "chapters": [
-            {
-              "number": 1,
-              "name": "Western Europe",
-              "pages": 21,
-              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_01_A4.pdf",
-              "pdf_size_a4_mb": 0.56
-            },
-            {
-              "number": 2,
-              "name": "Central Europe",
-              "pages": 21,
-              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_02_A4.pdf",
-              "pdf_size_a4_mb": 0.31
-            },
-            {
-              "number": 3,
-              "name": "Northern Europe",
-              "pages": 21,
-              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_03_A4.pdf",
-              "pdf_size_a4_mb": 0.92
-            },
-            {
-              "number": 4,
-              "name": "Southern Europe",
-              "pages": 21,
-              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_04_A4.pdf",
-              "pdf_size_a4_mb": 0.67
-            },
-            {
-              "number": 5,
-              "name": "Eastern Europe",
-              "pages": 21,
-              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_05_A4.pdf",
-              "pdf_size_a4_mb": 0.84
-            },
-            {
-              "number": 6,
-              "name": "West and Central Together",
-              "pages": 21,
-              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_06_A4.pdf",
-              "pdf_size_a4_mb": 2.83
-            },
-            {
-              "number": 7,
-              "name": "North and East Together",
-              "pages": 21,
-              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_07_A4.pdf",
-              "pdf_size_a4_mb": 2.78
-            },
-            {
-              "number": 8,
-              "name": "The South and the Balkans",
-              "pages": 21,
-              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_08_A4.pdf",
-              "pdf_size_a4_mb": 1.48
-            },
-            {
-              "number": 9,
-              "name": "All Europe: Major Countries",
-              "pages": 21,
-              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_09_A4.pdf",
-              "pdf_size_a4_mb": 3.92
-            },
-            {
-              "number": 10,
-              "name": "All Europe: The Full Map",
-              "pages": 21,
-              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_10_A4.pdf",
-              "pdf_size_a4_mb": 7.71
-            }
-          ]
+          "level": "A"
         },
         {
           "name": "World Geography",
@@ -1152,7 +1076,96 @@
               "pdf_path_a4": "downloads/world-geography/chapters/JPMethod_World_Geography_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 1.01
             }
-          ]
+          ],
+          "level": "B"
+        },
+        {
+          "name": "Europe Blank Maps",
+          "description": "Identify European countries from their outline on a blank map",
+          "slug": "europe-blank-maps",
+          "pdf_path": "downloads/europe-blank-maps/JPMethod_Europe_Blank_Maps.pdf",
+          "pdf_size_mb": 22.1,
+          "samples": [
+            "assets/samples/europe-blank-maps/sample_1.png",
+            "assets/samples/europe-blank-maps/sample_2.png"
+          ],
+          "pages": 214,
+          "sections": 10,
+          "pdf_path_a4": "downloads/europe-blank-maps/JPMethod_Europe_Blank_Maps_A4.pdf",
+          "pdf_size_a4_mb": 22.1,
+          "chapters": [
+            {
+              "number": 1,
+              "name": "Western Europe",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_01_A4.pdf",
+              "pdf_size_a4_mb": 0.56
+            },
+            {
+              "number": 2,
+              "name": "Central Europe",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_02_A4.pdf",
+              "pdf_size_a4_mb": 0.31
+            },
+            {
+              "number": 3,
+              "name": "Northern Europe",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_03_A4.pdf",
+              "pdf_size_a4_mb": 0.92
+            },
+            {
+              "number": 4,
+              "name": "Southern Europe",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_04_A4.pdf",
+              "pdf_size_a4_mb": 0.67
+            },
+            {
+              "number": 5,
+              "name": "Eastern Europe",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_05_A4.pdf",
+              "pdf_size_a4_mb": 0.84
+            },
+            {
+              "number": 6,
+              "name": "West and Central Together",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_06_A4.pdf",
+              "pdf_size_a4_mb": 2.83
+            },
+            {
+              "number": 7,
+              "name": "North and East Together",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_07_A4.pdf",
+              "pdf_size_a4_mb": 2.78
+            },
+            {
+              "number": 8,
+              "name": "The South and the Balkans",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_08_A4.pdf",
+              "pdf_size_a4_mb": 1.48
+            },
+            {
+              "number": 9,
+              "name": "All Europe: Major Countries",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_09_A4.pdf",
+              "pdf_size_a4_mb": 3.92
+            },
+            {
+              "number": 10,
+              "name": "All Europe: The Full Map",
+              "pages": 21,
+              "pdf_path_a4": "downloads/europe-blank-maps/chapters/JPMethod_Europe_Blank_Maps_Chapter_10_A4.pdf",
+              "pdf_size_a4_mb": 7.71
+            }
+          ],
+          "level": "C"
         },
         {
           "name": "World Blank Maps",
@@ -1239,7 +1252,8 @@
               "pdf_path_a4": "downloads/world-blank-maps/chapters/JPMethod_World_Blank_Maps_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 7.44
             }
-          ]
+          ],
+          "level": "D"
         }
       ]
     },
@@ -1332,7 +1346,8 @@
               "pdf_path_a4": "downloads/spanish-language/chapters/JPMethod_Spanish_Language_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.13
             }
-          ]
+          ],
+          "level": "A"
         },
         {
           "name": "Spanish Level B",
@@ -1419,7 +1434,8 @@
               "pdf_path_a4": "downloads/spanish-level-b/chapters/JPMethod_Spanish_Level_B_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.16
             }
-          ]
+          ],
+          "level": "B"
         },
         {
           "name": "Spanish Level C",
@@ -1506,7 +1522,8 @@
               "pdf_path_a4": "downloads/spanish-level-c/chapters/JPMethod_Spanish_Level_C_Chapter_10_A4.pdf",
               "pdf_size_a4_mb": 0.16
             }
-          ]
+          ],
+          "level": "C"
         }
       ]
     }

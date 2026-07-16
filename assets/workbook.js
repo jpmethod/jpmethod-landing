@@ -47,8 +47,9 @@ var PRINT_SVG =
 
 function factsLine(d) {
   var facts = [];
-  if (d.sections) facts.push(d.sections + ' section' + (d.sections === 1 ? '' : 's'));
-  if (d.pages) facts.push(d.pages + ' pages');
+  /* every workbook is the same 10-section / 20-page format; the distinguishing
+     fact is its level band (its step within the subject) */
+  if (d.level) facts.push('Level ' + d.level);
   facts.push('Free — answer keys included');
   return facts.join(' · ');
 }
