@@ -20,7 +20,6 @@
   <div class="wrap">
     <div class="top">
       <div class="wordmark"><a href="/">JP <span>Method</span></a></div>
-      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour theme">Dark mode</button>
     </div>
   </div>
 </header>
@@ -96,25 +95,8 @@
 </footer>
 
 <script>
-  /* theme toggle — same storage key as the rest of the site */
-  (function () {
-    var btn = document.getElementById('themeBtn');
-    function paintBtn() {
-      var dark = document.documentElement.dataset.theme === 'dark';
-      btn.textContent = dark ? 'Light mode' : 'Dark mode';
-    }
-    var saved = null;
-    try { saved = localStorage.getItem('jpm-theme'); } catch (e) {}
-    document.documentElement.dataset.theme =
-      (saved === 'light' || saved === 'dark') ? saved : 'light';
-    paintBtn();
-    btn.addEventListener('click', function () {
-      var next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-      document.documentElement.dataset.theme = next;
-      try { localStorage.setItem('jpm-theme', next); } catch (e) {}
-      paintBtn();
-    });
-  })();
+  /* theme: light only (workbooks are white paper) */
+  document.documentElement.dataset.theme = 'light';
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>

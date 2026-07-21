@@ -50,7 +50,6 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
   <div class="wrap">
     <div class="top">
       <div class="wordmark"><a href="/">JP <span>Method</span></a></div>
-      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour theme">Dark mode</button>
     </div>
   </div>
 </header>
