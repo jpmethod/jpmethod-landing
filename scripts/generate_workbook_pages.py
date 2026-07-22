@@ -21,11 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://jpmethod.org"
 DEFAULT_OG_IMAGE = SITE + "/assets/samples/european-geography/sample_1.png"
-FAVICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' "
-           "viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' "
-           "fill='%230b5cad'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' "
-           "font-size='28' font-weight='bold' fill='%23fff' "
-           "text-anchor='middle'%3EJP%3C/text%3E%3C/svg%3E")
+FAVICON = "/assets/favicon.svg"
 
 PAGE_TEMPLATE = """<!DOCTYPE html>
 <html lang="en" data-workbook="{slug}">
@@ -49,7 +45,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <header class="band slim">
   <div class="wrap">
     <div class="top">
-      <div class="wordmark"><a href="/">JP <span>Method</span></a></div>
+      <a href="/" class="brandlogo" aria-label="JP Method — home"></a>
     </div>
   </div>
 </header>

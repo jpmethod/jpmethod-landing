@@ -11,26 +11,18 @@
 <meta property="og:description" content="Free practice workbooks for maths, music, English, geography and Spanish. Short daily sheets with answer keys — download, print, practise.">
 <meta property="og:image" content="https://jpmethod.org/assets/samples/european-geography/sample_1.png">
 <meta name="theme-color" content="#0b5cad">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b5cad'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='bold' fill='%23fff' text-anchor='middle'%3EJP%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="/assets/favicon.svg">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 
 <header class="band">
   <div class="wrap">
-    <div class="top">
-      <div class="wordmark">JP <span>Method</span></div>
-    </div>
     <div class="herogrid">
       <div>
+        <a href="/" class="brandlogo" aria-label="JP Method — home"></a>
         <h1>Free printable practice workbooks</h1>
-        <p class="sub">Maths, music, English, geography and Spanish — built on short daily exercises your child can do in ten minutes, with the answers at the back.</p>
-        <div class="chips">
-          <span class="chip">Free — no sign-up</span>
-          <span class="chip">Answer keys included</span>
-          <span class="chip">Print at home or use a tablet</span>
-        </div>
-        <p class="stats" id="statsline">free for home &amp; classroom</p>
+        <p class="sub">Maths, music, English, geography and Spanish.</p>
       </div>
       <div class="herofan" aria-hidden="true">
         <img src="assets/samples/music-notation/sample_1.png" alt="" loading="eager">
@@ -187,7 +179,7 @@
       });
 
       var stats = document.getElementById('statsline');
-      stats.innerHTML = '<b>' + total + '</b> workbooks<span class="sep">·</span>' + stats.innerHTML;
+      if (stats) stats.innerHTML = '<b>' + total + '</b> workbooks<span class="sep">·</span>' + stats.innerHTML;
 
       /* scroll reveal — staggered per shelf, skipped for reduced motion */
       var motionOK = !matchMedia('(prefers-reduced-motion: reduce)').matches;

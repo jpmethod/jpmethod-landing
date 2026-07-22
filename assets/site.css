@@ -85,17 +85,23 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .band {
   background: linear-gradient(175deg, var(--brand) 0%, var(--brand-deep) 100%);
   color: var(--on-brand);
-  padding: 30px 0 36px;
+  padding: 22px 0 24px;
 }
 .band .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .wordmark { font-family: var(--fd); font-size: 1.3rem; font-weight: 700; letter-spacing: -0.01em; }
 .wordmark span { opacity: 0.85; }
 .wordmark a { color: inherit; text-decoration: none; }
+.brandlogo {
+  display: block; width: 264px; height: 70px; color: var(--on-brand);
+  background-color: currentColor;
+  -webkit-mask: url(/assets/jpmethod-lockup.svg) no-repeat left center / contain;
+          mask: url(/assets/jpmethod-lockup.svg) no-repeat left center / contain;
+}
 
 .herogrid { display: grid; grid-template-columns: 1fr auto; gap: 20px 48px; align-items: center; }
 .band h1 {
   font-family: var(--fd);
-  font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+  font-size: clamp(1.3rem, 2.7vw, 1.85rem);
   font-weight: 700; letter-spacing: -0.01em; line-height: 1.14;
   margin-top: 24px; max-width: 22ch; text-wrap: balance;
 }
@@ -113,14 +119,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .band .stats .sep { margin: 0 8px; opacity: 0.5; }
 
 /* fan of real sample pages — the hero visual */
-.herofan { position: relative; width: 330px; height: 252px; margin-top: 12px; }
+.herofan { position: relative; width: 276px; height: 210px; align-self: center; }
 .herofan img {
-  position: absolute; width: 152px; border-radius: 3px; background: #fff;
+  position: absolute; width: 128px; border-radius: 3px; background: #fff;
   box-shadow: 0 2px 4px rgba(5, 18, 34, 0.35), 0 18px 36px -12px rgba(5, 18, 34, 0.55);
 }
-.herofan img:nth-child(1) { left: 0;     top: 22px; transform: rotate(-7deg); }
-.herofan img:nth-child(2) { left: 88px;  top: 2px;  transform: rotate(-1deg); z-index: 1; }
-.herofan img:nth-child(3) { left: 176px; top: 18px; transform: rotate(6deg); }
+.herofan img:nth-child(1) { left: 0;     top: 18px; transform: rotate(-7deg); }
+.herofan img:nth-child(2) { left: 74px;  top: 2px;  transform: rotate(-1deg); z-index: 1; }
+.herofan img:nth-child(3) { left: 148px; top: 15px; transform: rotate(6deg); }
 @media (max-width: 920px) { .herofan { display: none; } }
 
 /* ---------- subject nav ---------- */
