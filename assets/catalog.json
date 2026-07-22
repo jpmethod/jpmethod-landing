@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-17T00:03:26.544621",
+  "generated": "2026-07-22T11:41:56.404619",
   "sections": [
     {
       "name": "Mathematics",
@@ -366,10 +366,6 @@
           "pages": 456,
           "sections": 10,
           "level": "D",
-          "pdf_path_a4": "downloads/long-division/JPMethod_Long_Division_A4.pdf",
-          "pdf_size_a4_mb": 1.8,
-          "pdf_path_2up": "downloads/long-division/JPMethod_Long_Division_2up.pdf",
-          "pdf_size_2up_mb": 1.8,
           "chapters": [
             {
               "number": 1,
@@ -728,10 +724,6 @@
           "pages": 224,
           "sections": 10,
           "level": "B",
-          "pdf_path_a4": "downloads/key-signatures/JPMethod_Key_Signatures_A4.pdf",
-          "pdf_size_a4_mb": 1.5,
-          "pdf_path_2up": "downloads/key-signatures/JPMethod_Key_Signatures_2up.pdf",
-          "pdf_size_2up_mb": 1.5,
           "chapters": [
             {
               "number": 1,
@@ -1268,10 +1260,6 @@
           "pages": 214,
           "sections": 10,
           "level": "C",
-          "pdf_path_a4": "downloads/europe-blank-maps/JPMethod_Europe_Blank_Maps_A4.pdf",
-          "pdf_size_a4_mb": 22.1,
-          "pdf_path_2up": "downloads/europe-blank-maps/JPMethod_Europe_Blank_Maps_2up.pdf",
-          "pdf_size_2up_mb": 22.1,
           "chapters": [
             {
               "number": 1,
@@ -1358,10 +1346,6 @@
           "pages": 214,
           "sections": 10,
           "level": "D",
-          "pdf_path_a4": "downloads/world-blank-maps/JPMethod_World_Blank_Maps_A4.pdf",
-          "pdf_size_a4_mb": 23.4,
-          "pdf_path_2up": "downloads/world-blank-maps/JPMethod_World_Blank_Maps_2up.pdf",
-          "pdf_size_2up_mb": 23.4,
           "chapters": [
             {
               "number": 1,
