@@ -14,17 +14,37 @@ var galleries = [];
 /* schematic of the duplex print-dialog setting: two pages per sheet,
    folded down the middle, flipped on the short edge */
 var PRINT_SVG =
-  '<svg viewBox="0 0 120 84" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">' +
-    '<rect x="6" y="10" width="92" height="64" rx="4"/>' +
-    '<line x1="52" y1="10" x2="52" y2="74" stroke-dasharray="4 4"/>' +
-    '<line x1="16" y1="26" x2="42" y2="26" stroke-width="1.5" opacity="0.55"/>' +
-    '<line x1="16" y1="36" x2="42" y2="36" stroke-width="1.5" opacity="0.55"/>' +
-    '<line x1="16" y1="46" x2="42" y2="46" stroke-width="1.5" opacity="0.55"/>' +
-    '<line x1="62" y1="26" x2="88" y2="26" stroke-width="1.5" opacity="0.55"/>' +
-    '<line x1="62" y1="36" x2="88" y2="36" stroke-width="1.5" opacity="0.55"/>' +
-    '<line x1="62" y1="46" x2="88" y2="46" stroke-width="1.5" opacity="0.55"/>' +
-    '<path d="M104 26 a 14 14 0 0 1 0 32" stroke-width="2.5"/>' +
-    '<path d="M100 22 l 4 4 -6 3 z" fill="currentColor" stroke="none"/>' +
+  '<svg viewBox="0 0 120 98" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">' +
+    '<rect x="10" y="6" width="100" height="62" rx="4"/>' +
+    '<line x1="60" y1="6" x2="60" y2="68" stroke-dasharray="4 4"/>' +
+    '<line x1="20" y1="20" x2="50" y2="20" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="20" y1="30" x2="50" y2="30" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="20" y1="40" x2="50" y2="40" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="20" y1="50" x2="50" y2="50" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="70" y1="20" x2="100" y2="20" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="70" y1="30" x2="100" y2="30" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="70" y1="40" x2="100" y2="40" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="70" y1="50" x2="100" y2="50" stroke-width="1.5" opacity="0.55"/>' +
+    /* fold the right half over onto the left */
+    '<path d="M94 80 q -28 14 -54 2" stroke-width="2"/>' +
+    '<path d="M32 80 l 12 -4 -1 9 z" fill="currentColor" stroke="none"/>' +
+  '</svg>';
+
+/* schematic of the single-sided setting: two worksheets side by side on one
+   A4 sheet, nothing to flip and nothing to fold */
+var PRINT_SVG_2UP =
+  '<svg viewBox="0 0 120 98" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">' +
+    '<rect x="18" y="26" width="96" height="60" rx="4" opacity="0.35"/>' +
+    '<rect x="6" y="12" width="96" height="60" rx="4" fill="var(--surface)"/>' +
+    '<line x1="54" y1="12" x2="54" y2="72" stroke-dasharray="4 4" opacity="0.6"/>' +
+    '<line x1="16" y1="26" x2="44" y2="26" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="16" y1="36" x2="44" y2="36" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="16" y1="46" x2="44" y2="46" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="16" y1="56" x2="44" y2="56" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="64" y1="26" x2="92" y2="26" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="64" y1="36" x2="92" y2="36" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="64" y1="46" x2="92" y2="46" stroke-width="1.5" opacity="0.55"/>' +
+    '<line x1="64" y1="56" x2="92" y2="56" stroke-width="1.5" opacity="0.55"/>' +
   '</svg>';
 
 function factsLine(d) {
@@ -37,46 +57,95 @@ function factsLine(d) {
 }
 
 function downloadBlock(d) {
-  var html = '<div class="getrow">';
+  var html = '<section class="prodsec getblock"><h2>Download it</h2>';
   html += '<div class="cta-primary">';
   if (d.pdf_path_a4) {
     html += '<a class="btn a5 big" href="/' + d.pdf_path_a4 + '" download>' +
       'Download the A4 booklet <small>' + d.pdf_size_a4_mb + ' MB</small></a>';
-    var alts = '';
+    var alts = 'Two worksheets per A4 sheet, printed double-sided and folded down ' +
+      'the middle — see how to print it below. ';
     if (d.pdf_path_2up) {
       alts += 'No double-sided printer? <a href="/' + d.pdf_path_2up + '" download>' +
-        'Print at home on any printer</a> (' + d.pdf_size_2up_mb + ' MB) — two ' +
-        'worksheets per A4 sheet, single-sided. ';
+        'Take the single-sided version</a> (' + d.pdf_size_2up_mb + ' MB) instead. ';
     }
-    alts += 'Reading on a tablet? <a href="/' + d.pdf_path + '" download>' +
-      'Download the single-page PDF</a> (' + d.pdf_size_mb + ' MB).';
+    alts += 'Working on a tablet? <a href="/' + d.pdf_path + '" download>' +
+      'Download the single-page PDF</a> (' + d.pdf_size_mb + ' MB) — one worksheet ' +
+      'per screen, nothing to print.';
     html += '<span class="cta-secondary">' + alts + '</span>';
   } else {
     html += '<a class="btn a5 big" href="/' + d.pdf_path + '" download>' +
-      'Download the PDF <small>' + d.pdf_size_mb + ' MB</small></a>';
-    html += '<span class="cta-secondary">One worksheet per page — read it on a ' +
-      'tablet or print it on any printer.</span>';
+      'Download the workbook <small>' + d.pdf_size_mb + ' MB</small></a>';
+    html += '<span class="cta-secondary">One worksheet per page, at booklet size ' +
+      '(A5). Print two of them side by side on each A4 sheet — see how to print it ' +
+      'below — or read it straight off a tablet with nothing to print. Rather print ' +
+      'a section at a time? Every chapter below is a ready-made A4 booklet.</span>';
   }
-  html += '</div>';
-  if (d.pdf_path_a4) {
-    html += '<aside class="howtoprint"><h2>How to print the booklet</h2>' +
-      '<div class="printfig">' + PRINT_SVG +
-      '<ol>' +
-        '<li>Print on ordinary A4 paper.</li>' +
-        '<li>Choose two-sided (duplex) printing.</li>' +
-        '<li>Set <b>flip on short edge</b> — the one setting people miss.</li>' +
-        '<li>Fold the stack down the middle and it reads like a book.</li>' +
-      '</ol></div></aside>';
-  }
-  html += '</div>';
+  html += '</div></section>';
   return html;
+}
+
+function printBlock(d) {
+  var fig, steps, note;
+
+  if (d.pdf_path_a4) {
+    fig = PRINT_SVG;
+    steps =
+      '<li>Print it on ordinary A4 paper — any home printer will do.</li>' +
+      '<li>In the print dialog, choose <b>two-sided</b> (duplex) printing.</li>' +
+      '<li>Set <b>flip on short edge</b>. This is the one setting people miss: on ' +
+        'long edge, the back of every sheet comes out upside down.</li>' +
+      '<li>Leave the scaling alone — the pages are already laid out two to a sheet, ' +
+        'so <b>100% / actual size</b> is right. "Fit to page" adds a white margin.</li>' +
+      '<li>Fold the finished stack down the middle. It reads like a book, in order, ' +
+        'with the answer keys at the back.</li>';
+    note = '<b>No double-sided printer?</b> ' +
+      (d.pdf_path_2up
+        ? 'Use the single-sided version above — same two worksheets per sheet, ' +
+          'printed on one side only. No flipping, no folding: work straight off ' +
+          'the sheets. '
+        : 'Print the odd pages, put the stack back in the tray, then print the ' +
+          'even pages in reverse. ') +
+      '<b>Don\'t print the whole thing at once.</b> It is ' + (d.pages || 'a couple of hundred') +
+      ' pages in all — 200 pages of practice, the rest worked answers. Most parents ' +
+      'print one chapter, work through it over a fortnight, then print the next. ' +
+      'The chapter booklets below print exactly the same way.';
+  } else {
+    fig = PRINT_SVG_2UP;
+    steps =
+      '<li>Print it on ordinary A4 paper — any home printer will do.</li>' +
+      '<li>In the print dialog, set <b>2 pages per sheet</b> (sometimes called ' +
+        '"multiple pages per sheet" or "2-up"). Two worksheets land side by side ' +
+        'at their proper size.</li>' +
+      '<li>Leave it <b>single-sided</b> — there is nothing to fold, the sheets read ' +
+        'straight down the pile.</li>' +
+      '<li>Want one big worksheet per sheet instead? Set <b>1 page per sheet</b> and ' +
+        '<b>fit to page</b>, and each worksheet fills a whole A4 side.</li>' +
+      '<li>The answer keys are at the back — print those last, or keep them on screen.</li>';
+    note = '<b>Don\'t print the whole thing at once.</b> It is ' +
+      (d.pages || 'a couple of hundred') + ' pages in all — 200 pages of practice, ' +
+      'the rest worked answers. Most parents print one chapter, work through it ' +
+      'over a fortnight, then print the next. ' +
+      '<b>Each chapter below is a proper A4 booklet:</b> print it two-sided with ' +
+      '<b>flip on short edge</b>, fold it down the middle, and you get a small book ' +
+      'with its answer key at the back.';
+  }
+
+  return '<section class="prodsec printsec"><h2>How to print it</h2>' +
+    '<p class="intro">Everything here is a plain PDF — no sign-up, no app. These are ' +
+      'the settings that make it come out right.</p>' +
+    '<div class="printcard">' +
+      '<div class="printfig">' + fig + '<ol>' + steps + '</ol></div>' +
+      '<p class="note">' + note + '</p>' +
+    '</div></section>';
 }
 
 function chaptersBlock(d) {
   if (!d.chapters || !d.chapters.length) return '';
   var html = '<section class="prodsec chapters"><h2>Download a single chapter</h2>' +
-    '<p class="intro">Each chapter is a small A4 booklet with its answer key at ' +
-    'the back — print it the same way as the full workbook.</p>' +
+    '<p class="intro">Twenty pages of practice each — a fortnight — and the ' +
+    'friendlier thing to print. Every chapter is a small A4 booklet with its worked ' +
+    'answers at the back, so the page count below is practice plus answers: print it ' +
+    'two-sided with <b>flip on short edge</b> and fold it down the middle.</p>' +
     '<div class="chapterlist">';
   d.chapters.forEach(function (c) {
     var num = c.number < 10 ? '0' + c.number : '' + c.number;
@@ -92,17 +161,20 @@ function chaptersBlock(d) {
   return html;
 }
 
+/* real pages from the workbook, shown before any download link — you should be
+   able to see what you are getting without downloading anything */
 function galleryBlock(d) {
   if (!d.samples || !d.samples.length) return '';
   galleries.push({ imgs: d.samples.map(function (s) { return '/' + s; }), name: d.name });
-  var html = '<section class="prodsec gallery"><h2>See inside</h2><div class="strip">';
+  var html = '<section class="prodsec gallery peek"><h2>A look inside</h2><div class="strip">';
   d.samples.forEach(function (s, i) {
     html += '<button class="thumb" type="button" data-idx="' + i + '" ' +
-      'aria-label="Preview sample page ' + (i + 1) + ' of ' + d.name + '">' +
+      'aria-label="Enlarge sample page ' + (i + 1) + ' of ' + d.name + '">' +
       '<img src="/' + s + '" loading="lazy" alt="Sample page ' + (i + 1) +
       ' of ' + d.name + '"></button>';
   });
-  html += '</div></section>';
+  html += '</div><p class="hint">Click a page to see it full size. Every workbook is ' +
+    'ten sections of twenty short sheets, with the answer keys at the back.</p></section>';
   return html;
 }
 
@@ -116,9 +188,10 @@ function renderWorkbook(d) {
       '<p class="desc">' + d.description + '</p>' +
       '<p class="facts">' + factsLine(d) + '</p>' +
     '</header>' +
+    galleryBlock(d) +
     downloadBlock(d) +
-    chaptersBlock(d) +
-    galleryBlock(d);
+    printBlock(d) +
+    chaptersBlock(d);
 
   Array.prototype.forEach.call(main.querySelectorAll('.thumb'), function (b) {
     b.addEventListener('click', function () {

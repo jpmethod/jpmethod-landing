@@ -63,14 +63,6 @@
   </div>
 </footer>
 
-<div class="modal" id="imageModal" role="dialog" aria-modal="true" aria-label="Worksheet preview">
-  <button class="mclose" id="mClose" type="button" aria-label="Close preview">&times;</button>
-  <button class="mprev" id="mPrev" type="button" aria-label="Previous page">&lsaquo;</button>
-  <img id="modalImage" alt="Worksheet sample page">
-  <button class="mnext" id="mNext" type="button" aria-label="Next page">&rsaquo;</button>
-  <div class="mcount" id="mCount"></div>
-</div>
-
 <script>
   /* ---------- theme: light only (workbooks are white paper) ---------- */
   document.documentElement.dataset.theme = 'light';
@@ -79,28 +71,27 @@
 
   function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
 
-  var galleries = [];
-
   function bookCard(domain) {
     var el = document.createElement('article');
     el.className = 'book';
 
-    var hasSamples = domain.samples && domain.samples.length > 0;
-    var galleryIdx = -1;
-    if (hasSamples) { galleryIdx = galleries.length; galleries.push({ imgs: domain.samples, name: domain.name }); }
+    /* downloads, samples and print instructions all live on the workbook page */
+    var url = 'workbooks/' + (domain.slug || slug(domain.name)) + '/';
 
-    /* whole first page shown as a sheet of paper; clicking opens the full gallery */
+    var hasSamples = domain.samples && domain.samples.length > 0;
+
+    /* whole first page shown as a sheet of paper; it links into the workbook,
+       exactly like the title and the button below it */
     var plate;
     if (hasSamples) {
-      var n = domain.samples.length;
       /* every workbook now shares the 10-section / 20-page format, so the pill
          states its level band (its step within the subject) instead */
       var pill = domain.level ? 'Level ' + domain.level
         : (domain.sections ? domain.sections + ' sections' : 'Preview');
       plate =
-        '<button class="tile" type="button" aria-label="Preview ' + n + ' sample page' + (n === 1 ? '' : 's') + ' of ' + domain.name + '">' +
-          '<img src="' + domain.samples[0] + '" loading="lazy" alt="Sample page of ' + domain.name + '">' +
-        '</button>' +
+        '<a class="tile" href="' + url + '" tabindex="-1" aria-hidden="true">' +
+          '<img src="' + domain.samples[0] + '" loading="lazy" alt="">' +
+        '</a>' +
         '<span class="pages">' + pill + '</span>';
     } else {
       plate = '<div class="tile"><div class="placeholder">Preview coming soon</div></div>';
@@ -108,8 +99,6 @@
 
     var badge = domain.badge ? '<span class="badge">' + domain.badge + '</span>' : '';
 
-    /* downloads live on the product page, next to the print instructions */
-    var url = 'workbooks/' + (domain.slug || slug(domain.name)) + '/';
     var get = '<div class="get">' +
       '<a class="btn view" href="' + url + '">See inside &amp; download</a>' +
     '</div>';
@@ -121,9 +110,6 @@
         '<p class="desc">' + domain.description + '</p>' + get +
       '</div>';
 
-    if (hasSamples) {
-      el.querySelector('.tile').addEventListener('click', function () { openModal(galleryIdx, 0); });
-    }
     return el;
   }
 
@@ -223,61 +209,6 @@
       document.getElementById('mainContent').innerHTML =
         '<p class="load-error">The catalogue failed to load. Please refresh the page.</p>';
     });
-
-  /* ---------- modal ---------- */
-  var modal = document.getElementById('imageModal'),
-      mImg = document.getElementById('modalImage'),
-      mCount = document.getElementById('mCount'),
-      mPrev = document.getElementById('mPrev'),
-      mNext = document.getElementById('mNext'),
-      mClose = document.getElementById('mClose'),
-      cur = { g: 0, i: 0 },
-      lastFocus = null;
-
-  function openModal(g, i) {
-    cur = { g: g, i: i };
-    paintModal();
-    modal.classList.add('open');
-    lastFocus = document.activeElement;
-    mClose.focus();
-  }
-  function paintModal() {
-    var gal = galleries[cur.g];
-    mImg.src = gal.imgs[cur.i];
-    mImg.alt = 'Sample page ' + (cur.i + 1) + ' of ' + gal.name;
-    mCount.textContent = gal.name + ' — page ' + (cur.i + 1) + ' of ' + gal.imgs.length;
-    var many = gal.imgs.length > 1;
-    mPrev.style.display = many ? '' : 'none';
-    mNext.style.display = many ? '' : 'none';
-  }
-  function step(d) {
-    var gal = galleries[cur.g];
-    cur.i = (cur.i + d + gal.imgs.length) % gal.imgs.length;
-    paintModal();
-  }
-  function closeModal() {
-    modal.classList.remove('open');
-    if (lastFocus && lastFocus.focus) lastFocus.focus();
-  }
-
-  mPrev.addEventListener('click', function (e) { e.stopPropagation(); step(-1); });
-  mNext.addEventListener('click', function (e) { e.stopPropagation(); step(1); });
-  mClose.addEventListener('click', closeModal);
-  modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
-  document.addEventListener('keydown', function (e) {
-    if (!modal.classList.contains('open')) return;
-    if (e.key === 'Escape') closeModal();
-    if (e.key === 'ArrowLeft') step(-1);
-    if (e.key === 'ArrowRight') step(1);
-    if (e.key === 'Tab') {
-      /* keep focus inside the dialog */
-      var f = [mClose, mPrev, mNext].filter(function (b) { return b.style.display !== 'none'; });
-      var first = f[0], last = f[f.length - 1];
-      if (e.shiftKey && document.activeElement === first) { last.focus(); e.preventDefault(); }
-      else if (!e.shiftKey && document.activeElement === last) { first.focus(); e.preventDefault(); }
-      else if (f.indexOf(document.activeElement) === -1) { first.focus(); e.preventDefault(); }
-    }
-  });
 </script>
 </body>
 </html>
