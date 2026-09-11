@@ -78,6 +78,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 </div>
 
 <script src="/assets/workbook.js"></script>
+<!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token":"34039a65f0124bf4ba0fdc51fe14c4b6"}}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
 """
